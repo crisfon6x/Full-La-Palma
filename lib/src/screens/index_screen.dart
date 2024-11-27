@@ -1,0 +1,143 @@
+import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/app.dart/constants.dart';
+import 'package:palma_municipio/src/screens/discover_screen.dart';
+import 'package:palma_municipio/src/screens/espacios_interes_screen.dart';
+import 'package:palma_municipio/src/screens/guias_servicio_turistico.dart';
+import 'package:palma_municipio/src/screens/oferta_gastronomica_screen.dart';
+import 'package:palma_municipio/src/screens/prestadores_servicios_screen.dart';
+import 'package:palma_municipio/src/screens/red_servicios_screen.dart';
+import 'package:palma_municipio/src/screens/sostenibilidad_screen.dart';
+import 'package:palma_municipio/src/screens/turismo_religioso_screen.dart';
+import 'package:palma_municipio/src/utils/utils.dart';
+import 'package:palma_municipio/src/widgets/custom_button.dart';
+import 'package:palma_municipio/src/screens/atractivos_naturales_screen.dart';
+import 'package:palma_municipio/src/widgets/image_btn.dart';
+
+class IndexScreen extends StatelessWidget {
+  const IndexScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0), // Add padding around the content
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Logo
+              Container(
+                width: 100,
+                height: 100,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.rectangle,
+                ),
+                child:
+                    Image.asset('assets/images/logo.png', fit: BoxFit.contain),
+              ),
+              const SizedBox(height: 16), // Space between image and title
+
+              // Title
+              Text(
+                AppTexts
+                    .titleDiscover, // Assuming AppTexts.title is defined in constants.dart
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 32),
+
+              // Principal Buttons (Wrapped in Expanded to allow scrolling)
+              Expanded(
+                child: principalButtons(context),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  // Widget to Render the List of Buttons
+  Widget principalButtons(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.all(16.0),
+      children: [
+        CustomButton(
+          text: AppTexts.descubrenos,
+          onPressed: () {
+            getNavigator(context, () => DiscoverScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/discover.png'),
+        ),
+        const SizedBox(height: 16), // Space between buttons
+        CustomButton(
+          text: AppTexts.atractivosNaturales,
+          onPressed: () {
+            getNavigator(context, () => AtractivosNaturales());
+          },
+          leadingImage: ImageBtn('assets/images/icons/atractivosNaturales.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.turismoReligioso,
+          onPressed: () {
+            getNavigator(context, () => TurismoReligiosoScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/religion.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.ofertaGastronomica,
+          onPressed: () {
+            getNavigator(context, () => OfertaGastronomicaScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/cook.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.espaciosInteres,
+          onPressed: () {
+            getNavigator(context, () => EspaciosInteresScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/espaciosInteres.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.guiaServiciosTuristicos,
+          onPressed: () {
+            getNavigator(context, () => GuiasServicioTuristicoScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/guiaTuristico.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.prestadoresServicios,
+          onPressed: () {
+            getNavigator(context, () => PrestadoresServiciosScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/prestadoresServicio.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.sostenibilidad,
+          onPressed: () {
+            getNavigator(context, () => SostenibilidadScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/sostenibilidad.png'),
+        ),
+        const SizedBox(height: 16),
+        CustomButton(
+          text: AppTexts.redServicios,
+          onPressed: () {
+            getNavigator(context, () => RedServiciosScreen());
+          },
+          leadingImage: ImageBtn('assets/images/icons/redservicios.png'),
+        ),
+        const SizedBox(height: 16),
+      ],
+    );
+  }
+}

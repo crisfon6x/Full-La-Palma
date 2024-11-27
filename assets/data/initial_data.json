@@ -1,0 +1,18 @@
+{
+    "carousel_items": [{
+            "title": "Rio Murca",
+            "subtitle": "La Palma",
+            "imageUrl": "https://example.com/image1.jpg"
+        },
+        {
+            "title": "Rio Verde",
+            "subtitle": "La Palma",
+            "imageUrl": "https://example.com/image2.jpg"
+        },
+        {
+            "title": "Rio Azul",
+            "subtitle": "La Palma",
+            "imageUrl": "https://example.com/image3.jpg"
+        }
+    ]
+}

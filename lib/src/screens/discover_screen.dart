@@ -132,9 +132,10 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
         height: 16.0,
       ),
       MapImageWithButton(
-          imageUrl: 'assets/images/gmapsLaPalma.png',
-          latitude: "5.358432",
-          longitude: "-74.390683,4552"),
+        imageUrl: 'assets/images/gmapsLaPalma.png',
+        mapUrl:
+            'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
+      ),
       SizedBox(
         height: 16.0,
       ),
@@ -242,7 +243,8 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural:
+                          getDataAtractivoNatural("mirador-cunada"))))),
       ImageCardModel(
           title: "CASCADA DEL ENSUEÑO",
           subtitle: "",
@@ -251,7 +253,8 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural:
+                          getDataAtractivoNatural("ascada-capital"))))),
       ImageCardModel(
           title: "LAS NACUMAS",
           subtitle: "",
@@ -260,7 +263,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural: getDataAtractivoNatural("nacumas"))))),
       ImageCardModel(
           title: "FIAMBRE",
           subtitle: "",
@@ -269,7 +272,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural: getDataAtractivoNatural("fiambre"))))),
       ImageCardModel(
           title: "SERPIENTE",
           subtitle: "",
@@ -278,7 +281,8 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural:
+                          getDataAtractivoNatural("serpiente"))))),
       ImageCardModel(
           title: "CAFÉ",
           subtitle: "",
@@ -287,7 +291,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural: getDataAtractivoNatural("cafe"))))),
       ImageCardModel(
           title: "CAPILLA DE SANTA BÁRBARA",
           subtitle: "",
@@ -296,7 +300,8 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural:
+                          getDataAtractivoNatural("capilla-santa-barbara"))))),
       ImageCardModel(
           title: "VIRGEN DE LA ASUNCIÓN DE LA PALMA",
           subtitle: "",
@@ -305,7 +310,8 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
+                      atractivonatural:
+                          getDataAtractivoNatural("virgen-asuncion"))))),
     ];
 
     return cardData.map((data) {

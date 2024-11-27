@@ -4,6 +4,7 @@ import 'package:palma_municipio/src/app.dart/constants.dart';
 import 'package:palma_municipio/src/models/atractivoNatural.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import 'package:palma_municipio/src/widgets/link_image_card.dart';
 import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
 import 'package:palma_municipio/src/widgets/recomendaciones.dart';
 
@@ -47,8 +48,7 @@ class AtractivoNaturalScreen extends StatelessWidget {
       ),
       MapImageWithButton(
           imageUrl: 'assets/images/gmapsLaPalma.png',
-          latitude: "5.358432",
-          longitude: "-74.390683,4552"),
+          mapUrl: atractivonatural.mapUrl),
       SizedBox(
         height: 16.0,
       ),

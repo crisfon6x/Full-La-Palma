@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/models/atractivoNatural.dart';
-import 'package:palma_municipio/src/models/btnIcon.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
 import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';

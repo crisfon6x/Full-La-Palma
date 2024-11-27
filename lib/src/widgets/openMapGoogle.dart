@@ -3,20 +3,17 @@ import 'package:palma_municipio/src/widgets/custom_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class OpenMapButton extends StatelessWidget {
-  final String latitude; // Latitud de la ubicación
-  final String longitude; // Longitud de la ubicación
+  final String url;
   final String buttonText; // Texto del botón
 
   const OpenMapButton({
     Key? key,
-    required this.latitude,
-    required this.longitude,
+    required this.url,
     this.buttonText = "Open Location in Google Maps",
   }) : super(key: key);
 
   Future<void> _openGoogleMaps() async {
-    final Uri _url = Uri.parse(
-        "https://www.google.com/maps/search/?api=1&query=$latitude,$longitude");
+    final Uri _url = Uri.parse(url);
 
     if (await canLaunchUrl(_url)) {
       await launchUrl(_url);
@@ -33,15 +30,13 @@ class OpenMapButton extends StatelessWidget {
 
 class MapImageWithButton extends StatelessWidget {
   final String imageUrl;
-  final String latitude;
-  final String longitude;
+  final String mapUrl;
   final String buttonText;
 
   const MapImageWithButton({
     Key? key,
     required this.imageUrl,
-    required this.latitude,
-    required this.longitude,
+    required this.mapUrl,
     this.buttonText = "Open Location in Google Maps",
   }) : super(key: key);
 
@@ -64,8 +59,7 @@ class MapImageWithButton extends StatelessWidget {
         ),
         // Botón superpuesto
         OpenMapButton(
-          latitude: latitude,
-          longitude: longitude,
+          url: mapUrl,
           buttonText: buttonText,
         ),
       ],

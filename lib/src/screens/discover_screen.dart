@@ -254,7 +254,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
                       atractivonatural:
-                          getDataAtractivoNatural("ascada-capital"))))),
+                          getDataAtractivoNatural("cascada-capital"))))),
       ImageCardModel(
           title: "LAS NACUMAS",
           subtitle: "",

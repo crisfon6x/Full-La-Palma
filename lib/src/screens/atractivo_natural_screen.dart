@@ -4,6 +4,7 @@ import 'package:palma_municipio/src/app.dart/constants.dart';
 import 'package:palma_municipio/src/models/atractivoNatural.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import 'package:palma_municipio/src/widgets/image_component.dart';
 import 'package:palma_municipio/src/widgets/link_image_card.dart';
 import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
 import 'package:palma_municipio/src/widgets/recomendaciones.dart';
@@ -46,9 +47,11 @@ class AtractivoNaturalScreen extends StatelessWidget {
       SizedBox(
         height: 16.0,
       ),
-      MapImageWithButton(
-          imageUrl: 'assets/images/gmapsLaPalma.png',
-          mapUrl: atractivonatural.mapUrl),
+      if (atractivonatural.title == 'Capilla de Santa Bárbara') drawEstatua(),
+      if (atractivonatural.mapUrl != '')
+        MapImageWithButton(
+            imageUrl: 'assets/images/gmapsLaPalma.png',
+            mapUrl: atractivonatural.mapUrl),
       SizedBox(
         height: 16.0,
       ),
@@ -89,6 +92,43 @@ class AtractivoNaturalScreen extends StatelessWidget {
       items: items,
       border_radius: border_radius_,
       height: 200,
+    );
+  }
+
+  final description1 =
+      '''A un costado de la Capilla Santa Bárbara, los visitantes encontrarán a San Martín, fray nacido en La Palma Cundinamarca (1604 – 1661). Según el relato del historiador, Eduardo Anzola, “San Martin es reconocido como el hijo más ilustre de esta población y considerado como un religioso milagroso, tanto en vida como en muerte.
+
+Su vida y su muerte estuvieron llenos de asombrosos milagros y profecías. Es una de las almas en santidad más grande del continente.
+
+''';
+  Widget drawEstatua() {
+    return Column(
+      children: [
+        Text(
+          'Estatua de Fray Juan Martín de la Palma',
+          style: GoogleFonts.leagueSpartan(
+            fontSize: 25,
+            fontWeight: FontWeight.w700,
+            fontStyle: FontStyle.normal,
+            color: AppColors.primaryColor, // Use text color from the property
+          ),
+        ),
+        Text(
+          description1,
+          style: TextStyle(fontSize: 16),
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/vr.jpg",
+          label: "Realidad Aumentada",
+          link:
+              "https://www.lookiar.com/models/046aca96462638dc19c4bf8531f18c2a/view", // Replace with the actual link
+        ),
+        StyledImage(
+          imageUrl:
+              'assets/images/Estatua-Fray-Martin-La-Palma.jpg', // Replace with your image path
+          borderRadius: 16.0,
+        ),
+      ],
     );
   }
 }

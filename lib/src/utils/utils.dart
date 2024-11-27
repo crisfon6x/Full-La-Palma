@@ -25,7 +25,8 @@ Atractivonatural getDataAtractivoNatural(String atractivo) {
         LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
-          link: "", // Replace with the actual link
+          link:
+              "https://www.lookiar.com/scene/179f847773332317745cafc6ec680900", // Replace with the actual link
         ),
       ],
       text:
@@ -415,6 +416,356 @@ El agua que fluye directamente desde la quebrada mantiene la piscina siempre fre
         "Tenga cuidado con las rocas resbaladizas alrededor de la quebrada.",
         "No salte de las rocas a menos que esté específicamente permitido y conozca la profundidad.",
         "Mantenga bajo control a las mascotas."
+      ],
+    ),
+    "virgen-asuncion": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "PISCINA NATURAL",
+      mapUrl:
+          'https://www.google.com/maps?ll=5.360854,-74.390121&z=17&t=h&hl=es&gl=CO&mapclient=embed&cid=4176750847069182940',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Ubicacion.jpg",
+          label: "Calle 4 No. 5 – 62 y 5 – 26 parque principal La Palma",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Brujula.jpg",
+          label: "5°21’39”N 74°23’24”W",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
+          label: "Reconocimiento por Imagen",
+          link:
+              "https://www.lookiar.com/scene/321a4ea0711af2988817a5a8aac91960", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Telefono.jpg",
+          label: "Teléfono:318 3118637",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Horario.jpg",
+          label: "Horario: Cierra a las 5:00 pm.",
+          link: "", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''La historia de la Virgen de la Asunción de La Palma es un relato fascinante que data de 1789 aproximadamente, cuando la imagen, destinada inicialmente a Chaguaní, llegó por error a La Palma desde España. Los intentos de devolverla fueron infructuosos, ya que la imagen se volvió inexplicablemente pesada. Tras una disputa legal que duró siete años, la Corona Española decretó que la Virgen permaneciera en La Palma. Desde entonces, se le atribuye el milagro de permitir ser movida después de la disputa, convirtiéndola en un símbolo de fe y perseverancia. Cada siete años, los palmeros celebran una tradición centenaria al bajar la imagen de su atril en conmemoración de este hecho milagroso.''',
+      galery1: [
+        'assets/images/Turismo-religioso-Banner-3.png',
+        'assets/images/Virgen-2-300x300.jpg',
+        'assets/images/Virgen-3-300x300.jpg'
+      ], // Galería 1
+      galery2: [
+        'assets/images/Turismo-religioso-Banner-3.png',
+        'assets/images/Virgen-2-300x300.jpg',
+        'assets/images/Virgen-3-300x300.jpg'
+      ],
+      titleRecomendaciones:
+          'Recomendaciones para una visita segura y responsable',
+      recomendaciones: [
+        "Infórmese sobre las fechas de celebración, especialmente el evento septenio cuando bajan la imagen.",
+        "Verifique los horarios de apertura de la iglesia donde se encuentra la imagen.",
+        "Vista de manera apropiada y respetuosa, considerando que es un lugar de culto.",
+        "Mantenga silencio o hable en voz baja dentro de la iglesia para preservar la solemnidad del lugar.",
+        "Si desea tomar fotografías, consulte si está permitido y evite usar flash para no dañar la imagen ni perturbar la experiencia de otros visitantes.",
+        "En caso de coincidir con una ceremonia, respete los rituales y siga las instrucciones de los celebrantes.",
+        "Participe respetuosamente en las oraciones o mantenga una actitud de respeto silencioso.",
+        "Asegúrese de conocer la accesibilidad del lugar para personas con movilidad reducida.",
+        "Compre recuerdos religiosos solo en tiendas autorizadas para apoyar a la comunidad local."
+      ],
+    ),
+    "nacumas": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Las nacumas",
+      mapUrl: '',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/vr.jpg",
+          label: "Realidad Aumentada",
+          link:
+              "https://www.lookiar.com/models/8a13b15a90f20ec394de4fe703922e59/view?live=1&show_url_button=1&smref=1", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''La nacuma es un tubérculo originario de la palma de iraca, también conocida como palmicha, que ha sido parte esencial de la cultura y la vida en La Palma. Con un sabor único que combina notas de champiñón y espárrago, la nacuma es versátil en la cocina, utilizada en platos salteados, sopas y guisos. Además de su sabor, es rica en calcio, vitamina C y antioxidantes, lo que la convierte en un ingrediente nutritivo y saludable.
+
+La nacuma se emplea en recetas tradicionales y platos innovadores, como huevos pericos con nacuma, empanadas de nacuma y arroz con nacuma, siendo un símbolo culinario de La Palma.''',
+      galery1: [
+        'assets/images/Nacumas-2.png',
+        'assets/images/Nacumas-3.png',
+        'assets/images/Nacumas-4.png'
+            'assets/images/Nacumas-5.png',
+        'assets/images/Nacumas-1.png'
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "fiambre": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Fiambre",
+      mapUrl: '',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/vr.jpg",
+          label: "Realidad Aumentada",
+          link:
+              "https://www.lookiar.com/models/52a8df838e5ebbdaa6c2acf25ab7151b/view?live=1&show_url_button=1&smref=1", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''Es un plato tradicional ideal para disfrutar al aire libre. Se prepara envolviendo arroz con mollejitas de pollo, carnes (res, cerdo y pollo), papas, yuca, mazorca, plátano y ahuyama en hojas de plátano. Primero, se pasan las hojas por el fuego para ablandarlas. Luego, se cocinan los ingredientes y se colocan sobre las hojas, comenzando con el arroz y siguiendo con las carnes, tubérculos y mazorca. Se le agrega hogao, una salsa de cebolla y tomate, y se envuelven los ingredientes en la hoja de plátano, formando un paquete que se amarra con una tira de la misma hoja.
+
+El fiambre se sirve en su envoltura, acompañado de ají, perfecto para llevar a paseos o disfrutar en festividades. Anteriormente se utilizaba para enviar el almuerzo a los trabajadores del campo, quienes debían laborar largas jornadas y se les empacaba la alimentación para mantenerla fresca.''',
+      galery1: [
+        'assets/images/Fiambre.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "capilla-santa-barbara": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Capilla de Santa Bárbara",
+      mapUrl:
+          'https://www.google.com/maps?ll=5.361656,-74.38788&z=17&t=h&hl=es-419&gl=CO&mapclient=embed&cid=4114618950031735291',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Ubicacion.jpg",
+          label: "Carrera 4 # 1 – 2",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Brujula.jpg",
+          label: "5°21’41”N 74°23’16”W",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/vr.jpg",
+          label: "3D",
+          link:
+              "https://poly.cam/capture/af3f2b17-50cf-46f6-847a-0d31426c44b1", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Telefono.jpg",
+          label: "Teléfono: 318 3118637",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Horario.jpg",
+          label: "Horario: Restringido temporalmente",
+          link: "", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''La Capilla de Santa Bárbara, ubicada en La Palma, Cundinamarca, es un encantador templo que forma parte del patrimonio religioso del municipio. Con un estilo sencillo y tradicional, esta capilla es un lugar de recogimiento y devoción, dedicada a Santa Bárbara, patrona de los rayos y las tormentas. Su ubicación en una colina de baja altura le otorga un atractivo especial, permitiendo que se admire el paisaje circundante.
+
+Originalmente construida con una estructura rústica de guadua, paredes de bareque, techo de hojas de palma y pisos de tierra. En esa época, se le dio un nuevo estilo de influencia española, conservando su forma rectangular y una sola nave, lo que aporta una sensación de simplicidad y serenidad.
+
+Aunque la Capilla de Santa Bárbara no está abierta al público, se puede apreciar desde el exterior, lo que la convierte en un atractivo visual dentro del paisaje de La Palma. Su historia y arquitectura son testimonio de la devoción y las tradiciones religiosas que perduran en el municipio.''',
+      galery1: [
+        'assets/images/Fiambre.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones:
+          'Recomendaciones para una visita segura y responsable',
+      recomendaciones: [
+        "Verifique los horarios de apertura de la iglesia donde se encuentra la imagen para planificar su visita.",
+        "Vístase de manera apropiada y respetuosa, ya que se trata de un lugar de culto.",
+        "Mantenga silencio o hable en voz baja dentro de la iglesia para preservar la solemnidad del lugar.",
+        "Si desea tomar fotografías, consulte si está permitido y evite usar flash para no dañar la imagen ni perturbar la experiencia de otros visitantes.",
+        "En caso de coincidir con una ceremonia, respete los rituales y siga las instrucciones de los celebrantes.",
+        "Participe respetuosamente en las oraciones o mantenga una actitud de respeto silencioso.",
+        "Asegúrese de conocer la accesibilidad del lugar para personas con movilidad reducida.",
+        "Compre recuerdos religiosos solo en tiendas autorizadas para apoyar a la comunidad local."
+      ],
+    ),
+    "bocadillo": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Bocadillo de maíz envuelto en hoja de plátano seco",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''Este Bocadillo de Maíz Envuelto en Hoja de Plátano Seco es una deliciosa preparación tradicional de la región, elaborada con harina de maíz, azúcar o panela, y un toque opcional de canela. La masa se forma con agua hasta obtener una textura suave y firme. Luego, se envuelve en hojas de plátano secas, previamente ablandadas con calor. Los bocadillos se cocinan al vapor o en agua caliente durante 45 minutos a una hora, hasta alcanzar una consistencia firme. Este bocadillo, con su sabor dulce y suave aroma a hoja de plátano, puede disfrutarse tanto caliente como a temperatura ambiente.''',
+      galery1: [
+        'assets/images/Bocadillo-de-Maiz-Enbuelto.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "sancocho": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Sancocho de gallina",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''El sancocho de gallina es un plato tradicional y reconfortante. Para prepararlo, se cocina la gallina en trozos en una olla con agua, cebolla, ajo y cilantro. Una vez que la carne está casi cocida, se agregan tubérculos como yuca, papa y plátano verde, todos cortados en trozos grandes. Se sazona con sal, comino y color (achiote) al gusto. La sopa hierve a fuego medio hasta que los ingredientes estén tiernos, lo cual suele tomar una hora. Justo antes de servir, se añade mazorca de maíz cortada en rodajas y se cocina por unos minutos más. El sancocho se sirve caliente, ideal para disfrutar en cualquier ocasión.''',
+      galery1: [
+        'assets/images/pIQUETE-GALLINA.jpeg',
+        'assets/images/Sancocho-de-gallina-2.png',
+        'assets/images/Sancocho-de-gallina-3.png',
+        'assets/images/Sancocho-de-gallina-4.png',
+        'assets/images/Sancocho-de-gallina-5.png',
+        'assets/images/Sancocho-de-gallina-1.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "arepa-cemento": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Arepa de cemento",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''Se elaboran a partir de maíz blanco o maíz de harina, que se muele en un molino de piedra hasta obtener una harina gruesa y homogénea. Esta harina se cierne en un colador de palma para dejarla fina. Luego, se humedece con agua y sal, y se amasa hasta obtener una masa uniforme. Se pasa nuevamente por un molino de granos para obtener una harina fina y seca. Con esta harina, se forman las arepas a mano, dándoles su forma característica y dejándolas reposar sobre hojas de plátano durante una hora. Finalmente, se cocinan en un fogón de leña durante unos 5 minutos por cada lado, hasta que estén doradas, ligeramente cuarteadas y con un toque ahumado único.''',
+      galery1: [
+        'assets/images/AREPA-de-cemento-400x284.jpg',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "envueltos-maiz": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Envueltos de maíz",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''Estos envueltos se preparan con una masa suave de maíz tierno, que se muele y se mezcla con azúcar y sal al gusto. La masa se coloca en hojas de mazorca previamente lavadas y secadas, formando pequeños paquetes que se aseguran doblando los extremos hacia adentro. Luego, se cocinan al vapor en agua caliente durante unos 45 minutos a 1 hora. Una vez listos, se retiran y se dejan enfriar un poco antes de servir. Se pueden disfrutar solos, con mantequilla, o acompañados de chocolate o café.''',
+      galery1: [
+        'assets/images/Oferta-gastronomica-La-Palma.jpg',
+        'assets/images/Envuelto-de-maiz.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "guarapo": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Guarapo",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''En La Palma, el guarapo es mucho más que una bebida; es un símbolo de la tradición y la cultura local. Su proceso de elaboración, que sigue una receta ancestral, comienza con la mezcla de panela o miel de caña de azúcar y agua, preferiblemente en guia de barro, lo que ayuda a realzar sus sabores naturales. En el fondo, se colocan los “cunchos” o “zupias”, levaduras naturales que son esenciales para su fermentación. Tras tres días de reposo, el guarapo alcanza la intensidad perfecta, adquiriendo un sabor único, influenciado por el clima y las costumbres de la región.
+
+ Refrescante y delicioso, el guarapo se sirve frío, con hielo en muchas ocasiones, convirtiéndolo en la bebida ideal para disfrutar en los días más cálidos. Esta bebida es un verdadero reflejo de la cultura campesina de La Palma, presente en celebraciones y encuentros comunitarios, y es apreciada por su sencillez, sabor auténtico y su vínculo con las tradiciones locales. ¡Ven y descubre el verdadero sabor de La Palma en cada sorbo de guarapo!''',
+      galery1: [
+        'assets/images/Guarappo.png',
+        'assets/images/Guarapo-1.png',
+        'assets/images/Guarapo-3.png',
+        'assets/images/Guarapo-2.png',
+        'assets/images/Guarapao.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "alto-cruz": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "ALTO DE LA CRUZ",
+      mapUrl:
+          'https://www.google.com/maps?ll=5.360833,-74.392575&z=16&t=m&hl=es&gl=CO&mapclient=embed&q=5%C2%B021%2739.0%22N+74%C2%B023%2724.0%22W+5.360833,+-74.390000@5.360833299999999,-74.39',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Ubicacion.jpg",
+          label: "La Palma Cundinamarca",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Brujula.jpg",
+          label: "5°21’39”N 74°23’24”W",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/vr.jpg",
+          label: "Reconocimiento por Imagen",
+          link:
+              "https://www.lookiar.com/scene/54dbd917a13a9ecdc3c8d666e4cdab93", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Telefono.jpg",
+          label: "Teléfono: 318 3118637",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Horario.jpg",
+          label: "Horario: 24 Horas",
+          link: "", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''El Alto de la Cruz es un emblemático punto de referencia en La Palma, conocido por ofrecer una vista panorámica impresionante del municipio y sus alrededores. En lo alto, se erige una monumental cruz, símbolo de la fe y la devoción de los habitantes del municipio. Este lugar, además de ser un punto de peregrinación durante las festividades religiosas, atrae a aquellos que buscan disfrutar de caminatas y actividades al aire libre, gracias a su entorno natural y la serenidad que lo caracteriza.
+
+Desde su cima, los visitantes pueden deleitarse con la belleza del paisaje montañoso que rodea la región. El Alto de la Cruz se ha convertido en un espacio de reflexión y conexión con la naturaleza, invitando a quienes lo visitan a experimentar un momento de paz y contemplación en un entorno que combina la espiritualidad con la magnificencia de la naturaleza.''',
+      galery1: [
+        'assets/images/Alto-de-la-Cruz_2.jpg',
+        'assets/images/Alto-de-la-Cruz.jpg',
+        'assets/images/Alto-de-la-Cruz_3.jpg',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones:
+          'Recomendaciones para una visita segura y responsable',
+      recomendaciones: [
+        "Infórmese sobre las fechas de celebración, especialmente el evento septenio cuando bajan la imagen.",
+        "Verifique los horarios de apertura de la iglesia donde se encuentra la imagen.",
+        "Vista de manera apropiada y respetuosa, considerando que es un lugar de culto.",
+        "Mantenga silencio o hable en voz baja dentro de la iglesia.",
+        "Verifique si está permitido tomar fotografías antes de hacerlo. Si se permiten fotos, no use flash para preservar la imagen y no perturbar a otros visitantes.",
+        "Si coincide con una ceremonia, respete los rituales y siga las instrucciones de los celebrantes.",
+        "Participe respetuosamente en las oraciones o mantén una actitud de respeto silencioso.",
+        "Infórmese sobre la accesibilidad del lugar para personas con movilidad reducida.",
+        "Compre recuerdos religiosos solo en tiendas autorizadas para apoyar a la comunidad local."
+      ],
+    ),
+    "semana-santa": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "SEMANA SANTA",
+      mapUrl:
+          'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es-419&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
+      btns: [
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Ubicacion.jpg",
+          label: "Calle 4 No. 5 – 62 y 5 – 26 parque principal La Palma",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Brujula.jpg",
+          label: "5°21’39”N 74°23’24”W",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Telefono.jpg",
+          label: "Teléfono: 318 3118637",
+          link: "", // Replace with the actual link
+        ),
+        LinkImageCard(
+          imageUrl: "assets/images/icons/Icono-Horario.jpg",
+          label: "Horario: Cierra a las 5:00 pm.",
+          link: "", // Replace with the actual link
+        ),
+      ],
+      text:
+          '''La celebración de la Semana Santa en La Palma se caracterizada por su solemnidad y profunda devoción. Durante esta semana, la comunidad participa activamente en una serie de procesiones, misas y representaciones que conmemoran la pasión, muerte y resurrección de Jesucristo. Entre los eventos más destacados se encuentran las procesiones del Domingo de Ramos, el Vía Crucis del Viernes Santo, y la Vigilia Pascual. Las calles del municipio se llenan de fieles que, acompañan las imágenes religiosas a lo largo de los recorridos, creando un ambiente de recogimiento y reflexión. Además de los actos litúrgicos, la Semana Santa en La Palma también es un momento de encuentro comunitario, donde la fe se combina con las tradiciones locales, haciendo de esta celebración una oportunidad para fortalecer los lazos espirituales y sociales.''',
+      galery1: [
+        'assets/images/La-Palma-25-sep-2022-14-SS.jpg',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones:
+          'Recomendaciones para una visita segura y responsable',
+      recomendaciones: [
+        'Participar en las procesiones, misas y el Vía Crucis es una oportunidad para vivir la espiritualidad y sentirte parte de la comunidad.',
+        'Vestir ropa cómoda y adecuada, dado que las actividades incluyen caminatas y eventos solemnes, es recomendable llevar ropa cómoda y respetuosa, especialmente para las procesiones.',
+        'Muchas de las actividades se realizan al aire libre, por lo que es importante protegerse del sol con bloqueador solar y llevar agua para mantenerse hidratado.',
+        'Algunas procesiones y misas suelen atraer a muchas personas. Llegar con antelación te permitirá disfrutar mejor de los eventos y encontrar un buen lugar para observar.',
+        'Aunque la Semana Santa es un momento de encuentro, es importante mantener una actitud respetuosa durante los actos litúrgicos, evitando el ruido o distracciones.',
+        'Aprovechar la ocasión para probar los platos típicos que suelen prepararse durante esta época, como el pescado y otras especialidades tradicionales.',
+        'Planificar el transporte y alojamiento.',
+        'Además de los actos religiosos, La Palma cuenta con hermosos paisajes y sitios como el Alto de la Cruz y la Capilla de Santa Bárbara, que son perfectos para visitas adicionales de reflexión y conexión con la naturaleza.'
       ],
     ),
   };

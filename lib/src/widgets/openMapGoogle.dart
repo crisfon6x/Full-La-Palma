@@ -7,16 +7,16 @@ class OpenMapButton extends StatelessWidget {
   final String buttonText; // Texto del botón
 
   const OpenMapButton({
-    Key? key,
+    super.key,
     required this.url,
     this.buttonText = "Open Location in Google Maps",
-  }) : super(key: key);
+  });
 
   Future<void> _openGoogleMaps() async {
-    final Uri _url = Uri.parse(url);
+    final Uri url = Uri.parse(this.url);
 
-    if (await canLaunchUrl(_url)) {
-      await launchUrl(_url);
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       throw 'Could not open Google Maps.';
     }
@@ -34,11 +34,11 @@ class MapImageWithButton extends StatelessWidget {
   final String buttonText;
 
   const MapImageWithButton({
-    Key? key,
+    super.key,
     required this.imageUrl,
     required this.mapUrl,
     this.buttonText = "Open Location in Google Maps",
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

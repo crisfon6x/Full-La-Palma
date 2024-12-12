@@ -7,11 +7,11 @@ class LinkImageCard extends StatelessWidget {
   final String link;
 
   const LinkImageCard({
-    Key? key,
+    super.key,
     required this.imageUrl,
     required this.label,
     required this.link,
-  }) : super(key: key);
+  });
 
   Future<void> _launchURL(Uri url) async {
     if (await canLaunchUrl(url)) {
@@ -23,9 +23,9 @@ class LinkImageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Uri _url = Uri.parse(link);
+    final Uri url = Uri.parse(link);
     return GestureDetector(
-      onTap: () => _launchURL(_url),
+      onTap: () => _launchURL(url),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -34,10 +34,10 @@ class LinkImageCard extends StatelessWidget {
             width: 80,
             height: 80,
           ),
-          SizedBox(height: 8.0),
+          const SizedBox(height: 8.0),
           Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.blue,
               fontSize: 16,
               fontWeight: FontWeight.bold,

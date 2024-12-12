@@ -32,9 +32,9 @@ class TurismoReligiosoScreen extends StatelessWidget {
         subtitle: "La Palma",
       ),
     ];
-    final description1 =
+    const description1 =
         '''La Palma se destaca como un destino único para el turismo religioso, donde la devoción y la belleza se entrelazan en cada rincón. Este pintoresco pueblo, con una profunda tradición católica y una rica historia, atrae a quienes buscan una experiencia espiritual auténtica. La imponente Iglesia de Nuestra Señora de la Asunción, con su arquitectura colonial, es el corazón de la fe local y un importante centro de peregrinación.''';
-    final description2 = '''
+    const description2 = '''
 Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la Semana Santa, una de las celebraciones más trascendentales del municipio, donde la espiritualidad se fusiona con las tradiciones que han marcado generaciones. ¡No te lo puedes perder!
       ''';
     final children = [
@@ -49,24 +49,24 @@ Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la S
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      StyledImage(
+      const StyledImage(
         imageUrl:
             'assets/images/Turismo-religioso-Banner-3.png', // Replace with your image path
         borderRadius: 16.0,
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
         description2,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       ...getImageCards(),
@@ -81,7 +81,7 @@ Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la S
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -151,9 +151,9 @@ Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la S
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: ImageCard(
-          title: data.title!,
-          subtitle: data.subtitle!,
-          image: data.image!,
+          title: data.title,
+          subtitle: data.subtitle,
+          image: data.image,
           onTap: data.method,
         ),
       );

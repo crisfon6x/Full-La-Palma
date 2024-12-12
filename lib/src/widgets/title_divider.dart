@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 class TitleDivider extends StatelessWidget {
   final String text;
   const TitleDivider({
-    Key? key,
+    super.key,
     required this.text,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
+        const Expanded(
           child: Divider(
             color: Colors.yellow,
             thickness: 2,
@@ -21,13 +21,13 @@ class TitleDivider extends StatelessWidget {
         ),
         Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.blue,
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Expanded(
+        const Expanded(
           child: Divider(
             color: Colors.yellow,
             thickness: 2,

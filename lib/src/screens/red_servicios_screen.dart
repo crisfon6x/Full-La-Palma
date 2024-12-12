@@ -108,10 +108,10 @@ class RedServiciosScreen extends StatelessWidget {
           color: AppColors.primaryColor,
         ),
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Vías de Acceso',
       ),
-      Text(
+      const Text(
         'Desde Bogotá',
         style: TextStyle(
           fontSize: 24.0,
@@ -136,7 +136,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Terminal de Transportes de El Salitre',
               style: TextStyle(
                 fontSize: 16.0,
@@ -152,7 +152,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
       Container(
@@ -172,7 +172,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Saliendo por la Calle 80',
               style: TextStyle(
                 fontSize: 16.0,
@@ -188,7 +188,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
       Container(
@@ -208,7 +208,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Terminal de Transportes del Norte.',
               style: TextStyle(
                 fontSize: 16.0,
@@ -224,10 +224,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      Text(
+      const Text(
         'Desde Yacopí',
         style: TextStyle(
           fontSize: 24.0,
@@ -261,10 +261,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      Text(
+      const Text(
         'Desde Caparrapí',
         style: TextStyle(
           fontSize: 24.0,
@@ -298,10 +298,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      Text(
+      const Text(
         'Desde Útica',
         style: TextStyle(
           fontSize: 24.0,
@@ -337,10 +337,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      Text(
+      const Text(
         'Desde La Peña',
         style: TextStyle(
           fontSize: 24.0,
@@ -373,10 +373,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Transporte',
       ),
       Container(
@@ -396,7 +396,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Empresa de Transporte Rionegro',
               style: TextStyle(
                 fontSize: 16.0,
@@ -404,7 +404,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -412,7 +412,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Punto de partida Bogotá',
@@ -428,7 +428,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -448,7 +448,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Empresa de Transporte Villa Gómez',
               style: TextStyle(
                 fontSize: 16.0,
@@ -456,7 +456,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -464,7 +464,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Punto de partida Bogotá',
@@ -483,7 +483,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -503,7 +503,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Agencia de Viajes La Palma Empresas de Transporte',
               style: TextStyle(
                 fontSize: 16.0,
@@ -511,7 +511,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -519,7 +519,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Flota Rionegro',
@@ -531,7 +531,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -539,7 +539,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Expreso Gómez Villa',
@@ -551,7 +551,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -559,7 +559,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '3214645776',
@@ -580,10 +580,10 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Transporte',
       ),
       Container(
@@ -603,7 +603,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Defensa Civil',
               style: TextStyle(
                 fontSize: 16.0,
@@ -611,7 +611,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -619,7 +619,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Barrio La Puerta',
@@ -631,7 +631,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -639,7 +639,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '3133139112',
@@ -651,7 +651,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -659,7 +659,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '3142100776',
@@ -671,7 +671,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -679,7 +679,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'efraingarcia662010@gmail.com',
@@ -691,7 +691,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -699,7 +699,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Comandante: Efraín García',
@@ -720,7 +720,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -740,7 +740,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Policía Nacional',
               style: TextStyle(
                 fontSize: 16.0,
@@ -748,7 +748,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -756,7 +756,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Carrera 4 No. 3 - 42',
@@ -768,7 +768,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -776,7 +776,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '322 7968400',
@@ -788,7 +788,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -796,7 +796,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '321 2459911',
@@ -808,7 +808,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -816,7 +816,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '322 3483586',
@@ -837,7 +837,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -857,7 +857,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'ESE Hospital San José',
               style: TextStyle(
                 fontSize: 16.0,
@@ -865,7 +865,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -873,7 +873,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Carrera 5 No. 1 - 04',
@@ -885,7 +885,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -893,7 +893,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '601 8505166',
@@ -905,7 +905,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -913,7 +913,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '350 4264852',
@@ -934,13 +934,13 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Financiero',
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -960,7 +960,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Banco Agrario',
               style: TextStyle(
                 fontSize: 16.0,
@@ -968,7 +968,7 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -976,7 +976,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Calle 3 No. 4 - 40',
@@ -997,7 +997,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -1017,7 +1017,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Corresponsal Bancario: Soluciones Super Paga',
               style: TextStyle(
                 fontSize: 16.0,
@@ -1025,11 +1025,11 @@ class RedServiciosScreen extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            Text(
+            const Text(
               'Corresponsal Bancolombia, Bogotá, Davivienda, BBVA y Colpatria',
               style: TextStyle(fontSize: 14),
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -1037,7 +1037,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     'Carrera 4 No. 4 – 61',
@@ -1049,7 +1049,7 @@ class RedServiciosScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
@@ -1057,7 +1057,7 @@ class RedServiciosScreen extends StatelessWidget {
                   size: 15.0,
                   color: AppColors.primaryColor,
                 ),
-                const SizedBox(width: 8.0),
+                SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
                     '3135841518',
@@ -1078,13 +1078,13 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Estaciones de Servicio',
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -1104,7 +1104,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Texaco',
               style: TextStyle(
                 fontSize: 16.0,
@@ -1121,7 +1121,7 @@ class RedServiciosScreen extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 8,
       ),
       Container(
@@ -1141,7 +1141,7 @@ class RedServiciosScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Texaco',
               style: TextStyle(
                 fontSize: 16.0,
@@ -1185,7 +1185,7 @@ class RedServiciosScreen extends StatelessWidget {
     return texts.map((text) {
       return Row(
         children: [
-          Icon(
+          const Icon(
             Icons.arrow_circle_right, // Icono similar al de la imagen
             color: Colors.red,
             size: 14.0,
@@ -1194,7 +1194,7 @@ class RedServiciosScreen extends StatelessWidget {
           Expanded(
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.primaryColor,
                 fontSize: 14.0,
               ),

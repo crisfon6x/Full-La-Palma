@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:palma_municipio/src/screens/index_screen.dart';
 import 'package:palma_municipio/src/app.dart/constants.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: AppColors.primaryColor,
         textTheme: GoogleFonts.leagueSpartanTextTheme(),
       ),
-      home: IndexScreen(),
+      home: const IndexScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

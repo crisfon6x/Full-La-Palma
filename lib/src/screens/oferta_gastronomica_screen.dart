@@ -32,9 +32,9 @@ class OfertaGastronomicaScreen extends StatelessWidget {
         subtitle: "La Palma",
       ),
     ];
-    final description1 =
+    const description1 =
         '''Brindando a locales y visitantes una variedad de platos tradicionales que capturan la esencia de la región. Entre las especialidades más destacadas se encuentran el sancocho de gallina, la sopa de balines, las arepas de cemento, platos elaborados a base de nacuma y el delicioso fiambre, todos elaborados con ingredientes frescos y locales que resaltan los sabores autóctonos de la zona.''';
-    final description2 = '''
+    const description2 = '''
 
 Además, durante los festivales gastronómicos que se celebran en el municipio, los asistentes tienen la oportunidad de saborear estos platillos tradicionales acompañados de productos frescos del campo, como frutas, verduras y carnes locales.
 
@@ -61,24 +61,24 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      StyledImage(
+      const StyledImage(
         imageUrl:
             'assets/images/Oferta-gastronomica-La-Palma.jpg', // Replace with your image path
         borderRadius: 16.0,
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
         description2,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -102,7 +102,7 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -196,9 +196,9 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: ImageCard(
-          title: data.title!,
-          subtitle: data.subtitle!,
-          image: data.image!,
+          title: data.title,
+          subtitle: data.subtitle,
+          image: data.image,
           onTap: data.method,
         ),
       );

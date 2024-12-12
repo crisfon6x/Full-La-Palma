@@ -16,7 +16,7 @@ class AtractivoNaturalScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final children = [
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -30,21 +30,21 @@ class AtractivoNaturalScreen extends StatelessWidget {
       ),
       Text(
         atractivonatural.text!,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       ...atractivonatural.btns,
-      SizedBox(
+      const SizedBox(
         height: 16,
       ),
       (atractivonatural.galery2 != null)
           ? getCarousel(atractivonatural.galery2!, 12)
-          : SizedBox(
+          : const SizedBox(
               height: 0.0,
             ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       if (atractivonatural.title == 'Capilla de Santa Bárbara') drawEstatua(),
@@ -52,7 +52,7 @@ class AtractivoNaturalScreen extends StatelessWidget {
         MapImageWithButton(
             imageUrl: 'assets/images/gmapsLaPalma.png',
             mapUrl: atractivonatural.mapUrl),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -65,8 +65,8 @@ class AtractivoNaturalScreen extends StatelessWidget {
         ),
       ),
       (atractivonatural.galery2 != null)
-          ? Recomendaciones(items: atractivonatural.recomendaciones!)
-          : SizedBox(
+          ? Recomendaciones(items: atractivonatural.recomendaciones)
+          : const SizedBox(
               height: 16.0,
             )
     ];
@@ -75,7 +75,7 @@ class AtractivoNaturalScreen extends StatelessWidget {
             child: Column(children: [
       getCarousel(atractivonatural.galery1, 0),
       Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: children,
         ),
@@ -115,15 +115,15 @@ Su vida y su muerte estuvieron llenos de asombrosos milagros y profecías. Es un
         ),
         Text(
           description1,
-          style: TextStyle(fontSize: 16),
+          style: const TextStyle(fontSize: 16),
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/vr.jpg",
           label: "Realidad Aumentada",
           link:
               "https://www.lookiar.com/models/046aca96462638dc19c4bf8531f18c2a/view", // Replace with the actual link
         ),
-        StyledImage(
+        const StyledImage(
           imageUrl:
               'assets/images/Estatua-Fray-Martin-La-Palma.jpg', // Replace with your image path
           borderRadius: 16.0,

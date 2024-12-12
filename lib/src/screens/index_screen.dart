@@ -39,10 +39,10 @@ class IndexScreen extends StatelessWidget {
               const SizedBox(height: 16), // Space between image and title
 
               // Title
-              Text(
+              const Text(
                 AppTexts
                     .titleDiscover, // Assuming AppTexts.title is defined in constants.dart
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -68,7 +68,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.descubrenos,
           onPressed: () {
-            getNavigator(context, () => DiscoverScreen());
+            getNavigator(context, () => const DiscoverScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/discover.png'),
         ),
@@ -76,7 +76,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.atractivosNaturales,
           onPressed: () {
-            getNavigator(context, () => AtractivosNaturales());
+            getNavigator(context, () => const AtractivosNaturales());
           },
           leadingImage: ImageBtn('assets/images/icons/atractivosNaturales.png'),
         ),
@@ -84,7 +84,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.turismoReligioso,
           onPressed: () {
-            getNavigator(context, () => TurismoReligiosoScreen());
+            getNavigator(context, () => const TurismoReligiosoScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/religion.png'),
         ),
@@ -92,7 +92,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.ofertaGastronomica,
           onPressed: () {
-            getNavigator(context, () => OfertaGastronomicaScreen());
+            getNavigator(context, () => const OfertaGastronomicaScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/cook.png'),
         ),
@@ -100,7 +100,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.espaciosInteres,
           onPressed: () {
-            getNavigator(context, () => EspaciosInteresScreen());
+            getNavigator(context, () => const EspaciosInteresScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/espaciosInteres.png'),
         ),
@@ -108,7 +108,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.guiaServiciosTuristicos,
           onPressed: () {
-            getNavigator(context, () => GuiasServicioTuristicoScreen());
+            getNavigator(context, () => const GuiasServicioTuristicoScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/guiaTuristico.png'),
         ),
@@ -116,7 +116,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.prestadoresServicios,
           onPressed: () {
-            getNavigator(context, () => PrestadoresServiciosScreen());
+            getNavigator(context, () => const PrestadoresServiciosScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/prestadoresServicio.png'),
         ),
@@ -124,7 +124,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.sostenibilidad,
           onPressed: () {
-            getNavigator(context, () => SostenibilidadScreen());
+            getNavigator(context, () => const SostenibilidadScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/sostenibilidad.png'),
         ),
@@ -132,7 +132,7 @@ class IndexScreen extends StatelessWidget {
         CustomButton(
           text: AppTexts.redServicios,
           onPressed: () {
-            getNavigator(context, () => RedServiciosScreen());
+            getNavigator(context, () => const RedServiciosScreen());
           },
           leadingImage: ImageBtn('assets/images/icons/redservicios.png'),
         ),

@@ -10,7 +10,7 @@ class CardContact extends StatelessWidget {
   final String phone;
 
   const CardContact({
-    Key? key,
+    super.key,
     required this.title,
     required this.image,
     required this.coordinates,
@@ -18,13 +18,13 @@ class CardContact extends StatelessWidget {
     required this.hours,
     required this.email,
     required this.phone,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
-      margin: EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.all(16.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(15.0),
@@ -32,7 +32,7 @@ class CardContact extends StatelessWidget {
           BoxShadow(
             color: Colors.grey.withOpacity(0.3),
             blurRadius: 5.0,
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
           ),
         ],
       ),
@@ -41,13 +41,13 @@ class CardContact extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.blue,
             ),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
@@ -57,15 +57,15 @@ class CardContact extends StatelessWidget {
               height: 150.0,
             ),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           _buildInfoRow(Icons.location_on, coordinates),
-          SizedBox(height: 5.0),
+          const SizedBox(height: 5.0),
           _buildInfoRow(Icons.place, address),
-          SizedBox(height: 5.0),
+          const SizedBox(height: 5.0),
           _buildInfoRow(Icons.access_time, hours),
-          SizedBox(height: 5.0),
+          const SizedBox(height: 5.0),
           _buildInfoRow(Icons.email, email),
-          SizedBox(height: 5.0),
+          const SizedBox(height: 5.0),
           _buildInfoRow(Icons.phone, phone),
         ],
       ),
@@ -80,11 +80,11 @@ class CardContact extends StatelessWidget {
           size: 20,
           color: Colors.grey,
         ),
-        SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),
         Expanded(
           child: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.black,
             ),

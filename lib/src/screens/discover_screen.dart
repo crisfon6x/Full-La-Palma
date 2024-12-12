@@ -24,7 +24,7 @@ final List<Carouselbutton> categories = [
   Carouselbutton(
     button_text: AppTexts.atractivosNaturales,
     method: (context) => Navigator.push(context,
-        MaterialPageRoute(builder: (context) => AtractivosNaturales())),
+        MaterialPageRoute(builder: (context) => const AtractivosNaturales())),
     carousel: [
       CarouselItem(image: "assets/images/Atractivos Naturales.jpg"),
       CarouselItem(image: "assets/images/Atractivos Naturales (2).jpg"),
@@ -34,8 +34,10 @@ final List<Carouselbutton> categories = [
   ),
   Carouselbutton(
     button_text: AppTexts.turismoReligioso,
-    method: (context) => Navigator.push(context,
-        MaterialPageRoute(builder: (context) => TurismoReligiosoScreen())),
+    method: (context) => Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => const TurismoReligiosoScreen())),
     carousel: [
       CarouselItem(image: "assets/images/Religioso (2).jpg"),
       CarouselItem(image: "assets/images/Religioso.jpg"),
@@ -45,8 +47,10 @@ final List<Carouselbutton> categories = [
   ),
   Carouselbutton(
     button_text: AppTexts.ofertaGastronomica,
-    method: (context) => Navigator.push(context,
-        MaterialPageRoute(builder: (context) => OfertaGastronomicaScreen())),
+    method: (context) => Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => const OfertaGastronomicaScreen())),
     carousel: [
       CarouselItem(image: "assets/images/Gastronomia (4).jpg"),
       CarouselItem(image: "assets/images/Gastronomia (2).jpg"),
@@ -59,7 +63,7 @@ final List<Carouselbutton> categories = [
     method: (context) => Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => GuiasServicioTuristicoScreen())),
+            builder: (context) => const GuiasServicioTuristicoScreen())),
     carousel: [
       CarouselItem(image: "assets/images/Turismo (2).jpg"),
       CarouselItem(image: "assets/images/Turismo (3).jpg"),
@@ -115,32 +119,32 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
-      Text(
+      const Text(
         description1,
         style: TextStyle(fontSize: 16),
       ),
-      StyledImage(
+      const StyledImage(
         imageUrl:
             'assets/images/Mirador_cañada.png', // Replace with your image path
         borderRadius: 16.0,
       ),
-      Text(
+      const Text(
         description2,
         style: TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      MapImageWithButton(
+      const MapImageWithButton(
         imageUrl: 'assets/images/gmapsLaPalma.png',
         mapUrl:
             'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       getCategories(context),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -153,7 +157,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
         ),
       ),
       ...getImageCards(),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -165,7 +169,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
-      CardContact(
+      const CardContact(
         title: "Gobernación de Cundinamarca",
         image: 'assets/images/Gobernacion-Cundinamarca-3.jpg',
         coordinates: "4°38'28.25\"N 74°5'40.09\"W",
@@ -174,7 +178,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
         email: "Correo institucional: contactenos@cundinamarca.gov.co",
         phone: "+57 (601) 7490000",
       ),
-      CardContact(
+      const CardContact(
         title: "Alcaldía Municipal de La Palma",
         image: 'assets/images/Alcaldia-de-La-Palma-Cundinamarca-3.jpg',
         coordinates: "5°21'37\"N 74°23'24\"W",
@@ -195,7 +199,7 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -210,12 +214,12 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
     return Column(
       children: categories.map((category) {
         return Padding(
-          padding: EdgeInsets.only(bottom: 16.0),
+          padding: const EdgeInsets.only(bottom: 16.0),
           child: CarouselButton(
             items: category.carousel,
             button_text: category.button_text!,
             onItemPressed: (index) {
-              category.method?.call(context);
+              category.method.call(context);
             },
           ),
         );
@@ -318,9 +322,9 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: ImageCard(
-          title: data.title!,
-          subtitle: data.subtitle!,
-          image: data.image!,
+          title: data.title,
+          subtitle: data.subtitle,
+          image: data.image,
           onTap: data.method,
         ),
       );

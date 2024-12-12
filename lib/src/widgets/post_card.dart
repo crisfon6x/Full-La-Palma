@@ -15,7 +15,7 @@ class PostCard extends StatelessWidget {
   final Function onTap;
 
   const PostCard(
-      {Key? key,
+      {super.key,
       required this.image,
       required this.name,
       required this.subtitle,
@@ -23,8 +23,7 @@ class PostCard extends StatelessWidget {
       required this.title,
       required this.userImage,
       required this.user,
-      required this.onTap})
-      : super(key: key);
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +73,7 @@ class PostCard extends StatelessWidget {
                 Expanded(
                   child: Text(
                     user,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 14.0,
                         fontWeight: FontWeight.normal,
                         color: AppColors.celeste),
@@ -82,7 +81,7 @@ class PostCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Text(
@@ -96,8 +95,8 @@ class PostCard extends StatelessWidget {
               ),
             ),
             Text(
-              text.length > 100 ? text.substring(0, 100) + '...' : text,
-              style: TextStyle(fontSize: 16),
+              text.length > 100 ? '${text.substring(0, 100)}...' : text,
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),

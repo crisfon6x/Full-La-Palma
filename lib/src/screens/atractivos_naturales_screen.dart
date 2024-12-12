@@ -97,15 +97,15 @@ class AtractivosNaturales extends StatelessWidget {
         subtitle: '',
       ),
     ];
-    final description1 =
+    const description1 =
         'La Palma es un verdadero refugio natural, con paisajes montañosos y vastas áreas verdes que ofrecen el escenario perfecto tanto para la aventura como para el descanso. Entre sus atractivos se destacan miradores el Alto de la Cruz, La Cuchilla (Alto Grande o la Torre), Alto de la Osa y la Cañada, que regalan vistas espectaculares, majestuosas montañas como la India Dormida, el río Murca, quebradas de aguas cristalinas y refrescantes cascadas, que te conectan con su entorno.';
-    final description2 =
+    const description2 =
         '''Los exuberantes bosques y colinas que rodean La Palma, crean un entorno ideal para el ecoturismo, proporcionando oportunidades únicas para adentrarse en la biodiversidad local. Aquí, cada sendero y rincón natural se convierten en una experiencia auténtica, donde los visitantes pueden disfrutar de un escape revitalizante y lleno de tranquilidad en medio de una naturaleza sorprendente.
 
 ¡La Palma es el destino perfecto para quienes buscan aventura y serenidad en un solo lugar!''';
-    final faunaDescription =
+    const faunaDescription =
         '''La diversidad de la fauna en La Palma es un verdadero tesoro natural. Entre las aves se encuentra el pájaro moteado, que se destaca por sus llamativos colores, mientras que la boruga y el guache completan este fascinante mosaico de vida silvestre. También existen mamíferos, entre ellos: el armadillo de nueve bandas, el cuatí y el tejón o mapache, que habitan los bosques junto a la ardilla y el conejo. El caimán de aguja y varias especies de serpientes también forman parte de la fauna local, enriqueciendo la región. Además, animales como la comadreja, el cusumbo y la chuchita colicorta se ocultan entre la vegetación.''';
-    final floraDescription =
+    const floraDescription =
         '''La riqueza natural de La Palma se refleja en su diversa flora, que va desde majestuosos árboles hasta plantas frutales y ornamentales. Entre las especies más destacadas se encuentran el roble, el cedro y el nogal, que imponen su presencia en los paisajes. Los guaduales, la palma de cera y la palma de iraca agregan un toque único y exótico. La región también es rica en frutos como el níspero, la naranja, el plátano, el aguacate y el cacao, mientras que plantas como el café, la tapura, la guatila y el palo amargo enriquecen su biodiversidad.
 ''';
 
@@ -121,20 +121,20 @@ class AtractivosNaturales extends StatelessWidget {
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(height: 16.0),
-      StyledImage(
+      const SizedBox(height: 16.0),
+      const StyledImage(
         imageUrl:
             'assets/images/Atractivos Naturales (3).jpg', // Replace with your image path
         borderRadius: 16.0,
       ),
-      SizedBox(height: 16.0),
+      const SizedBox(height: 16.0),
       Text(
         description2,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -147,7 +147,7 @@ class AtractivosNaturales extends StatelessWidget {
         ),
       ),
       ...getImageCards(),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -159,7 +159,7 @@ class AtractivosNaturales extends StatelessWidget {
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
-      LinkImageCard(
+      const LinkImageCard(
         imageUrl: "assets/images/icons/vr.jpg",
         label: "Realidad Aumentada Serpiente",
         link:
@@ -167,7 +167,7 @@ class AtractivosNaturales extends StatelessWidget {
       ),
       Text(
         faunaDescription,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
       CarouselComponent(
         items: carouselFaunaItems, // Pass the dynamic content
@@ -175,7 +175,7 @@ class AtractivosNaturales extends StatelessWidget {
         autoPlay: true, // Optional autoplay behavior
         border_radius: 16.0,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -187,13 +187,13 @@ class AtractivosNaturales extends StatelessWidget {
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
-      LinkImageCard(
+      const LinkImageCard(
         imageUrl: "assets/images/icons/vr.jpg",
         label: "Realidad Aumentada Café",
         link:
             "https://www.lookiar.com/models/b4e5c222d926f84c2faae71c1eb5eeed/view?live=1&show_url_button=1&smref=1", // Replace with the actual link
       ),
-      LinkImageCard(
+      const LinkImageCard(
         imageUrl: "assets/images/icons/vr.jpg",
         label: "Realidad Aumentada Palma",
         link:
@@ -201,7 +201,7 @@ class AtractivosNaturales extends StatelessWidget {
       ),
       Text(
         floraDescription,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
       CarouselComponent(
         items: carouselFloraItems, // Pass the dynamic content
@@ -220,7 +220,7 @@ class AtractivosNaturales extends StatelessWidget {
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -330,9 +330,9 @@ class AtractivosNaturales extends StatelessWidget {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: ImageCard(
-          title: data.title!,
-          subtitle: data.subtitle!,
-          image: data.image!,
+          title: data.title,
+          subtitle: data.subtitle,
+          image: data.image,
           onTap: data.method,
         ),
       );

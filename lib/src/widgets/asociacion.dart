@@ -12,19 +12,18 @@ class AsociacionCard extends StatelessWidget {
   final Widget? trailingImage;
 
   const AsociacionCard(
-      {Key? key,
+      {super.key,
       required this.title,
       required this.subtitle,
       required this.linkText,
       required this.linkUrl,
-      this.trailingImage})
-      : super(key: key);
+      this.trailingImage});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
-      margin: EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.all(16.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(15.0),
@@ -32,7 +31,7 @@ class AsociacionCard extends StatelessWidget {
           BoxShadow(
             color: Colors.grey.withOpacity(0.3),
             blurRadius: 5.0,
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
           ),
         ],
       ),

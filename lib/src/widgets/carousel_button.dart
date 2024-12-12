@@ -10,18 +10,17 @@ class CarouselButton extends StatelessWidget {
   final Function onItemPressed;
   final String button_text;
   const CarouselButton(
-      {Key? key,
+      {super.key,
       required this.items,
       required this.onItemPressed,
-      this.button_text = ''})
-      : super(key: key);
+      this.button_text = ''});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => onItemPressed(0),
       child: Container(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12.0),
             color: AppColors.primaryColor),
@@ -36,11 +35,11 @@ class CarouselButton extends StatelessWidget {
               },
               border_radius: 12.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             Text(
-              button_text!,
+              button_text,
               style: GoogleFonts.leagueSpartan(
                 fontSize: 20,
                 fontWeight: FontWeight.w700,

@@ -12,17 +12,17 @@ Atractivonatural getDataAtractivoNatural(String atractivo) {
           'https://www.google.com/maps?ll=5.344712,-74.399905&z=16&t=h&hl=es&gl=CO&mapclient=embed&cid=14587652365618642047',
       title: "PUENTE DE ORO",
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Puente de Oro",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º20’42.72”N 74º23’58.84”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
@@ -67,17 +67,17 @@ El sonido relajante de la quebrada La Hornilla, con sus cristalinas aguas, se co
       mapUrl:
           'https://www.google.com/maps?ll=5.344712,-74.399905&z=16&t=h&hl=es&gl=CO&mapclient=embed&cid=14587652365618642047',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Murca",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º19’50”N 74º21’5”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl:
               "assets/images/icons/la-palma-realidad-aumentada-turismo.png",
           label: "Reconocimiento por Imagen",
@@ -126,17 +126,17 @@ Esta quebrada está rodeada de exuberante vegetación y al final del camino, ofr
       mapUrl:
           'https://www.google.com/maps?ll=5.344712,-74.399905&z=16&t=h&hl=es&gl=CO&mapclient=embed&cid=14587652365618642047',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Murca",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º19’50”N 74º21’5”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
@@ -183,17 +183,17 @@ El río también cuenta con varias playas naturales formadas por piedras mediana
       mapUrl:
           'https://www.google.com/maps?ll=5.351357,-74.416869&z=15&t=h&hl=es&gl=CO&mapclient=embed&q=5%C2%B021%2704.0%22N+74%C2%B024%2738.0%22W+5.351111,+-74.410556@5.3511111,-74.4105556',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Minipí de Quijano",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º21’4”N 74º24’38”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl:
               "assets/images/icons/la-palma-realidad-aumentada-turismo.png",
           label: "Toma 360",
@@ -237,17 +237,17 @@ Además, se puede admirar la extensión de los bosques, ríos y quebradas que al
       mapUrl:
           'https://www.google.com/maps?ll=5.416303,-74.420847&z=16&t=m&hl=es&gl=CO&mapclient=embed&q=5%C2%B024%2758.7%22N+74%C2%B025%2705.8%22W+5.416306,+-74.418278@5.416305599999999,-74.4182778',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Minipí de Quijano",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º24’58.69”N   74º25’5.78”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
@@ -292,12 +292,12 @@ La vereda también conserva una profunda conexión con las tradiciones locales, 
       mapUrl:
           'https://www.google.com/maps?ll=5.342199,-74.384868&z=16&t=h&hl=es&gl=CO&mapclient=embed&q=5%C2%B020%2731.0%22N+74%C2%B022%2755.0%22W+5.341944,+-74.381944@5.3419444,-74.3819444',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Murca",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
@@ -344,12 +344,12 @@ Desde este cerro, los turistas que desean explorar los paisajes inigualables de 
       mapUrl:
           'https://www.google.com/maps/search/reserva+natural+cerca+de+Alto+de+la+Rosa,+San+Antonio,+Tolima/@3.9316315,-75.5536184,45791m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Reserva Natural Alto de la Osa",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
@@ -379,12 +379,12 @@ Este ecosistema cuenta con bosques densos y una topografía escarpada que ofrece
       mapUrl:
           'https://www.google.com/maps/search/reserva+natural+cerca+de+Alto+de+la+Rosa,+San+Antonio,+Tolima/@3.9316315,-75.5536184,45791m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Vereda Murca, sector el Puente Km. 7.5",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5º19’8” N 74º22’19” W",
           link: "", // Replace with the actual link
@@ -424,28 +424,28 @@ El agua que fluye directamente desde la quebrada mantiene la piscina siempre fre
       mapUrl:
           'https://www.google.com/maps?ll=5.360854,-74.390121&z=17&t=h&hl=es&gl=CO&mapclient=embed&cid=4176750847069182940',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Calle 4 No. 5 – 62 y 5 – 26 parque principal La Palma",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5°21’39”N 74°23’24”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
           label: "Reconocimiento por Imagen",
           link:
               "https://www.lookiar.com/scene/321a4ea0711af2988817a5a8aac91960", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Telefono.jpg",
           label: "Teléfono:318 3118637",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Horario.jpg",
           label: "Horario: Cierra a las 5:00 pm.",
           link: "", // Replace with the actual link
@@ -482,7 +482,7 @@ El agua que fluye directamente desde la quebrada mantiene la piscina siempre fre
       title: "Las nacumas",
       mapUrl: '',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/vr.jpg",
           label: "Realidad Aumentada",
           link:
@@ -509,7 +509,7 @@ La nacuma se emplea en recetas tradicionales y platos innovadores, como huevos p
       title: "Fiambre",
       mapUrl: '',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/vr.jpg",
           label: "Realidad Aumentada",
           link:
@@ -533,28 +533,28 @@ El fiambre se sirve en su envoltura, acompañado de ají, perfecto para llevar a
       mapUrl:
           'https://www.google.com/maps?ll=5.361656,-74.38788&z=17&t=h&hl=es-419&gl=CO&mapclient=embed&cid=4114618950031735291',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Carrera 4 # 1 – 2",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5°21’41”N 74°23’16”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/vr.jpg",
           label: "3D",
           link:
               "https://poly.cam/capture/af3f2b17-50cf-46f6-847a-0d31426c44b1", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Telefono.jpg",
           label: "Teléfono: 318 3118637",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Horario.jpg",
           label: "Horario: Restringido temporalmente",
           link: "", // Replace with the actual link
@@ -671,28 +671,28 @@ Aunque la Capilla de Santa Bárbara no está abierta al público, se puede aprec
       mapUrl:
           'https://www.google.com/maps?ll=5.360833,-74.392575&z=16&t=m&hl=es&gl=CO&mapclient=embed&q=5%C2%B021%2739.0%22N+74%C2%B023%2724.0%22W+5.360833,+-74.390000@5.360833299999999,-74.39',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "La Palma Cundinamarca",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5°21’39”N 74°23’24”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/vr.jpg",
           label: "Reconocimiento por Imagen",
           link:
               "https://www.lookiar.com/scene/54dbd917a13a9ecdc3c8d666e4cdab93", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Telefono.jpg",
           label: "Teléfono: 318 3118637",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Horario.jpg",
           label: "Horario: 24 Horas",
           link: "", // Replace with the actual link
@@ -728,22 +728,22 @@ Desde su cima, los visitantes pueden deleitarse con la belleza del paisaje monta
       mapUrl:
           'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es-419&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
       btns: [
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Ubicacion.jpg",
           label: "Calle 4 No. 5 – 62 y 5 – 26 parque principal La Palma",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Brujula.jpg",
           label: "5°21’39”N 74°23’24”W",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Telefono.jpg",
           label: "Teléfono: 318 3118637",
           link: "", // Replace with the actual link
         ),
-        LinkImageCard(
+        const LinkImageCard(
           imageUrl: "assets/images/icons/Icono-Horario.jpg",
           label: "Horario: Cierra a las 5:00 pm.",
           link: "", // Replace with the actual link

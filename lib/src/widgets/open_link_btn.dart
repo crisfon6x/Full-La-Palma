@@ -14,7 +14,7 @@ class OpenLinkButton extends StatelessWidget {
   final Widget? trailingImage;
 
   const OpenLinkButton({
-    Key? key,
+    super.key,
     required this.url,
     this.buttonText = 'Abrir Enlace',
     this.backgroundColor = AppColors.primaryColor,
@@ -23,12 +23,20 @@ class OpenLinkButton extends StatelessWidget {
     this.fontSize = 15.0,
     this.fontWeight = FontWeight.w700,
     this.trailingImage,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () => _launchURL(url),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: backgroundColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius),
+        ),
+        elevation: 4,
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+      ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -46,14 +54,6 @@ class OpenLinkButton extends StatelessWidget {
             trailingImage!,
           ],
         ],
-      ),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
-        elevation: 4,
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
       ),
     );
   }

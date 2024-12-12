@@ -31,7 +31,7 @@ class ServiciosTuristicosScreen extends StatelessWidget {
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),

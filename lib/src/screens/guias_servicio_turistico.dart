@@ -24,7 +24,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
         subtitle: "",
       ),
     ];
-    final description1 =
+    const description1 =
         '''La Guía de Servicios Turísticos de La Palma es esencial para promover el turismo local y brindar a los visitantes una experiencia completa. Incluye información detallada sobre una variedad de opciones gastronómicas, desde restaurantes urbanos hasta rurales, y ofrece una selección de alojamientos que van desde hoteles hasta hospedajes en entornos más tranquilos. Además, se destacan los balnearios locales, proporcionando opciones para el descanso y la recreación, lo que enriquece la oferta turística del municipio. Esta guía es la herramienta perfecta para disfrutar al máximo de lo que La Palma tiene para ofrecer.''';
     final List<Servicioturistico> restUrbanos = [
       Servicioturistico(
@@ -68,7 +68,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
     final List<Servicioturistico> alojamiento = [];
     final List<Servicioturistico> balnearios = [];
     final children = [
-      TitleDivider(
+      const TitleDivider(
         text: AppTexts.laPalma,
       ),
       Text(
@@ -82,15 +82,15 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Guía de Restaurantes',
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -103,7 +103,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
         ),
       ),
       ...getServiciosList(restUrbanos),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -116,7 +116,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
         ),
       ),
       ...getServiciosList(restRurales),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -129,7 +129,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
         ),
       ),
       ...getServiciosList(restRurales),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       Text(
@@ -154,7 +154,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
                 autoPlay: true, // Optional autoplay behavior
               ),
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: children,
                 ),
@@ -169,8 +169,8 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
   List<Widget> getServiciosList(List<Servicioturistico> servicioTuristico) {
     return servicioTuristico.map((data) {
       return Container(
-        padding: EdgeInsets.all(16.0),
-        margin: EdgeInsets.symmetric(vertical: 8.0),
+        padding: const EdgeInsets.all(16.0),
+        margin: const EdgeInsets.symmetric(vertical: 8.0),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15.0),
@@ -178,7 +178,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
             BoxShadow(
               color: Colors.grey.withOpacity(0.3),
               blurRadius: 5.0,
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
             ),
           ],
         ),
@@ -195,7 +195,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
                     AppColors.primaryColor, // Use text color from the property
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             CarouselComponent(
@@ -203,21 +203,21 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
               autoPlay: true, // Optional autoplay behavior),
               border_radius: 12.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
+                const Icon(
                   Icons.location_on,
                   size: 20.0,
                 ),
                 const SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
-                    'Dirección: ' + data.address,
-                    style: TextStyle(
+                    'Dirección: ${data.address}',
+                    style: const TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.bold,
                     ),
@@ -229,15 +229,15 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
+                const Icon(
                   Icons.phone_android,
                   size: 20.0,
                 ),
                 const SizedBox(width: 8.0),
                 Expanded(
                   child: Text(
-                    'WhatsApp: ' + data.whatsapp,
-                    style: TextStyle(
+                    'WhatsApp: ${data.whatsapp}',
+                    style: const TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.bold,
                     ),
@@ -245,7 +245,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 8.0,
             ),
             OpenLinkButton(

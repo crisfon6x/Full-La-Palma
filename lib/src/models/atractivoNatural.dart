@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/models/btnIcon.dart';
-import 'package:palma_municipio/src/models/galery.dart';
 import 'package:palma_municipio/src/widgets/link_image_card.dart';
 
 class Atractivonatural {

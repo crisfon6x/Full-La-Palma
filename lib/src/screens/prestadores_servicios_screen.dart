@@ -21,7 +21,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
         subtitle: "La Palma",
       ),
     ];
-    final description1 =
+    const description1 =
         '''ASOTURISPAL promueve el turismo sostenible en La Palma, Cundinamarca, mediante la búsqueda del desarrollo integral, la paz y la reconciliación, estacando la cultura local, la riqueza natural, religiosa y humana para beneficiar a toda la comunidad.''';
 
     List<Asociacion> asociaciones = [
@@ -94,12 +94,12 @@ class PrestadoresServiciosScreen extends StatelessWidget {
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      Row(
+      const Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(
@@ -107,7 +107,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
             size: 15.0,
             color: AppColors.primaryColor,
           ),
-          const SizedBox(width: 8.0),
+          SizedBox(width: 8.0),
           Expanded(
             child: Text(
               'Teléfono: 318 3118637',
@@ -119,7 +119,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
           ),
         ],
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       OpenLinkButton(
@@ -132,25 +132,25 @@ class PrestadoresServiciosScreen extends StatelessWidget {
         fontWeight: FontWeight.bold,
         trailingImage: ClipRRect(
           borderRadius: BorderRadius.circular(12), // Rounded corners
-          child: Icon(
+          child: const Icon(
             Icons.picture_as_pdf,
             size: 20.0,
             color: AppColors.secondaryColor,
           ),
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      StyledImage(
+      const StyledImage(
         imageUrl:
             'assets/images/Asoturispal-1.jpg', // Replace with your image path
         borderRadius: 16.0,
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
-      TitleDivider(
+      const TitleDivider(
         text: 'Asociaciones',
       ),
       ...getAsociaciones(asociaciones),
@@ -165,7 +165,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -185,7 +185,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
           linkUrl: data.pdf,
           trailingImage: ClipRRect(
             borderRadius: BorderRadius.circular(12), // Rounded corners
-            child: Icon(
+            child: const Icon(
               Icons.picture_as_pdf,
               size: 20.0,
               color: AppColors.secondaryColor,

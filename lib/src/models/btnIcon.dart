@@ -1,5 +1,3 @@
-import 'package:palma_municipio/src/models/galery.dart';
-
 class btnIcon {
   String imageUrl;
   String label;

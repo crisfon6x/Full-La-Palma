@@ -48,7 +48,7 @@ class _CarouselComponentState extends State<CarouselComponent> {
                     borderRadius: BorderRadius.circular(
                         widget.border_radius), // Rounded corners
                     child: Image.asset(
-                      item.image!,
+                      item.image,
                       fit: BoxFit.cover,
                     ),
                   ),

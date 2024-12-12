@@ -5,10 +5,10 @@ class RecomendacionNumber extends StatelessWidget {
   final String text;
 
   const RecomendacionNumber({
-    Key? key,
+    super.key,
     required this.number,
     required this.text,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class RecomendacionNumber extends StatelessWidget {
         children: [
           Text(
             number.toString(),
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 36,
               fontWeight: FontWeight.bold,
               color: Colors.blue,

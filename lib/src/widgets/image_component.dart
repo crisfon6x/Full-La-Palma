@@ -6,11 +6,11 @@ class StyledImage extends StatelessWidget {
   final Widget? overlayWidget; // Optional overlay, like the yellow dots
 
   const StyledImage({
-    Key? key,
+    super.key,
     required this.imageUrl,
     this.borderRadius = 16.0, // Default rounded corner radius
     this.overlayWidget, // Optional overlay for additional designs
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

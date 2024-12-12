@@ -79,7 +79,7 @@ class SostenibilidadScreen extends StatelessWidget {
         subtitle: "La Palma",
       ),
     ];
-    final description1 =
+    const description1 =
         '''La Palma, es un tesoro escondido en el corazón de Cundinamarca, el cual ofrece una experiencia única que combina la riqueza de su patrimonio religioso, la exquisitez de su gastronomía local y la belleza incomparable de su entorno natural. Como visitante, tiene la oportunidad de sumergirse en la cultura vibrante de La Palma y, al mismo tiempo, contribuir a la preservación de sus tradiciones y ecosistemas.
 
 Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos preparado las siguientes recomendaciones que le guiarán en su viaje por este maravilloso destino:''';
@@ -116,9 +116,9 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
       ),
       Text(
         description1,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
-      SizedBox(
+      const SizedBox(
         height: 16.0,
       ),
       ...getRecomendacionesCards(recomendaciones),
@@ -143,7 +143,7 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
               autoPlay: true, // Optional autoplay behavior
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: children,
               ),
@@ -173,7 +173,7 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
     return Column(
       children: categories.map((category) {
         return Padding(
-          padding: EdgeInsets.only(bottom: 16.0),
+          padding: const EdgeInsets.only(bottom: 16.0),
           child: CarouselButton(
             items: category.carousel,
             button_text: category.button_text!,
@@ -190,7 +190,7 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
     return Column(
       children: posts.map((data) {
         return Padding(
-            padding: EdgeInsets.only(bottom: 16.0),
+            padding: const EdgeInsets.only(bottom: 16.0),
             child: PostCard(
               image: data.image,
               name: data.name,

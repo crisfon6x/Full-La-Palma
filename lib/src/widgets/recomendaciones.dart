@@ -4,7 +4,7 @@ import 'package:palma_municipio/src/app.dart/constants.dart';
 class Recomendaciones extends StatelessWidget {
   final List<String> items;
 
-  const Recomendaciones({Key? key, required this.items}) : super(key: key);
+  const Recomendaciones({super.key, required this.items});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Recomendaciones extends StatelessWidget {
       child: Container(
         child: Row(
           children: [
-            Icon(
+            const Icon(
               Icons.arrow_circle_right, // Icono similar al de la imagen
               color: Colors.red,
               size: 16.0,
@@ -28,7 +28,7 @@ class Recomendaciones extends StatelessWidget {
             Expanded(
               child: Text(
                 text,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.primaryColor,
                   fontSize: 16.0,
                 ),

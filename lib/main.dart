@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'La Palma',
       theme: ThemeData(
-        primaryColor: AppColors.primaryColor,
-        textTheme: GoogleFonts.leagueSpartanTextTheme(),
-      ),
+          primaryColor: AppColors.primaryColor,
+          textTheme: GoogleFonts.leagueSpartanTextTheme(),
+          scaffoldBackgroundColor: Colors.white),
       home: const IndexScreen(),
       debugShowCheckedModeBanner: false,
     );

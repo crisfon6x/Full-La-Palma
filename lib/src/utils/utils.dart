@@ -29,6 +29,7 @@ Atractivonatural getDataAtractivoNatural(String atractivo) {
               "https://www.lookiar.com/scene/179f847773332317745cafc6ec680900", // Replace with the actual link
         ),
       ],
+      videoUrl: 'assets/videos/La-palma.mp4',
       text:
           '''Ubicado en la tranquila vereda de Puente de Oro, este rincón mágico ofrece una experiencia envolvente en plena naturaleza. Rodeado de exuberantes paisajes, que permite a los visitantes disfrutar de una biodiversidad rica y de impresionantes vistas. El recorrido hacia este lugar es perfecto para caminatas, en las que se puede observar la flora nativa y la fauna local en su hábitat.
 El sonido relajante de la quebrada La Hornilla, con sus cristalinas aguas, se convierte en la banda sonora ideal para quienes buscan desconectar de la rutina y sumergirse en la serenidad de la naturaleza. Además de embellecer el entorno, estas aguas son un recurso esencial para la comunidad rural, que convive en armonía con este ecosistema.''',
@@ -80,11 +81,12 @@ El sonido relajante de la quebrada La Hornilla, con sus cristalinas aguas, se co
         const LinkImageCard(
           imageUrl:
               "assets/images/icons/la-palma-realidad-aumentada-turismo.png",
-          label: "Reconocimiento por Imagen",
+          label: "Toma 360",
           link:
-              "https://www.lookiar.com/scene/179f847773332317745cafc6ec680900", // Replace with the actual link
+              "https://kuula.co/share/hNf2T?logo=1&info=1&fs=1&vr=0&thumbs=1", // Replace with the actual link
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-1.mp4',
       text:
           '''Es un afluente del río Murca de La Palma Cundinamarca, que nace en Topaipí y atraviesa paisajes llenos de riqueza natural. En su tramo medio-alto se encuentra el charco conocido como el Ensueño, un destino ideal para los amantes de la naturaleza.
 
@@ -143,6 +145,7 @@ Esta quebrada está rodeada de exuberante vegetación y al final del camino, ofr
               "https://www.lookiar.com/scene/01678d311f834b72a2918256ddd74d86",
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-1-1.mp4',
       text:
           '''Nace en la vereda de Guachipay, donde se encuentran las quebradas El Curo y Cristal, a solo 8 km del casco urbano de La Palma. A lo largo de sus orillas, se extienden majestuosos bosques de guadua y una rica vegetación nativa que crean un paisaje de valles y zonas escarpadas, esculpidas por el propio río, brindando un entorno exótico y de alto valor ecológico.
 
@@ -201,6 +204,7 @@ El río también cuenta con varias playas naturales formadas por piedras mediana
               "https://kuula.co/share/h7nDY?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1",
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-1 (1).mp4',
       text:
           '''Es otro punto privilegiado de La Palma, desde donde se puede contemplar la riqueza natural y paisajística del municipio. Su ubicación estratégica ofrece vistas panorámicas que abarcan desde el casco urbano hasta las montañas y valles circundantes, permitiendo apreciar en su totalidad la belleza del entorno natural de la región y los nevados de la cordillera central: Santa Isabel, el Ruiz y el Tolima.
 
@@ -254,6 +258,7 @@ Además, se puede admirar la extensión de los bosques, ríos y quebradas que al
               "https://www.lookiar.com/scene/bd94b44606ed6bb1517f043bf7a931ba",
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-5.mp4',
       text:
           '''Es un auténtico refugio rural, lleno de encanto y biodiversidad. Su paisaje montañoso, cubierto de vegetación nativa, es el hogar de una comunidad campesina que se dedica a la agricultura y ganadería, reflejando el carácter productivo de la región. Las pequeñas parcelas y fincas familiares son el corazón de la economía local, abasteciendo al municipio con productos frescos y tradicionales.
 
@@ -304,6 +309,7 @@ La vereda también conserva una profunda conexión con las tradiciones locales, 
               "https://www.lookiar.com/scene/4cf2680ea4b6e6a4b0f209a4fd6a6e79",
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-3-1.mp4',
       text:
           '''Es una majestuosa formación montañosa cuya silueta recuerda a una mujer recostada, lo que le ha otorgado su nombre y un aire místico. Este cerro no solo es famoso por su particular forma, sino también por las leyendas que lo envuelven. Una de las historias más conocidas habla de una princesa indígena Ixama, que fue castigada por el cacique Itoco, quien la mandó crucificar en la tierra por su infidelidad y su madre Luna, pidió a la Tierra, que la arropara (absorbiéndola) para evitar su sufrimiento, quedando por su traición, dormida eternamente, en este terreno, convirtiéndolo en un símbolo de la cultura local.
 
@@ -356,6 +362,7 @@ Desde este cerro, los turistas que desean explorar los paisajes inigualables de 
               "https://www.lookiar.com/scene/ad5747b1446a6fe144dd0edcab1b6997",
         ),
       ],
+      videoUrl: 'assets/videos/La-palma-2.mp4',
       text:
           '''Es un majestuoso paraje ubicado en la cordillera que domina el paisaje de La Palma. Visible desde el casco urbano y desde varios puntos estratégicos del municipio, esta reserva se destaca por su impresionante biodiversidad y la belleza de su entorno montañoso. El Alto de la Osa es un refugio natural que alberga una gran variedad de especies de flora y fauna nativa, convirtiéndolo en un importante pulmón verde de la región.
 
@@ -420,7 +427,7 @@ El agua que fluye directamente desde la quebrada mantiene la piscina siempre fre
     ),
     "virgen-asuncion": Atractivonatural(
       image: "assets/images/Cascada-del-ensueno (1).jpg",
-      title: "PISCINA NATURAL",
+      title: "VIRGEN DE LA ASUNCION",
       mapUrl:
           'https://www.google.com/maps?ll=5.360854,-74.390121&z=17&t=h&hl=es&gl=CO&mapclient=embed&cid=4176750847069182940',
       btns: [
@@ -528,7 +535,7 @@ El fiambre se sirve en su envoltura, acompañado de ají, perfecto para llevar a
       recomendaciones: [],
     ),
     "capilla-santa-barbara": Atractivonatural(
-      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      image: "assets/images/La-Palma-25-sep-2022-14-SS.jpg",
       title: "Capilla de Santa Bárbara",
       mapUrl:
           'https://www.google.com/maps?ll=5.361656,-74.38788&z=17&t=h&hl=es-419&gl=CO&mapclient=embed&cid=4114618950031735291',
@@ -567,8 +574,9 @@ Originalmente construida con una estructura rústica de guadua, paredes de bareq
 
 Aunque la Capilla de Santa Bárbara no está abierta al público, se puede apreciar desde el exterior, lo que la convierte en un atractivo visual dentro del paisaje de La Palma. Su historia y arquitectura son testimonio de la devoción y las tradiciones religiosas que perduran en el municipio.''',
       galery1: [
-        'assets/images/Fiambre.png',
-      ], // Galería 1
+        'assets/images/La-Palma-25-sep-2022-5-300x200.jpg',
+        'assets/images/La-Palma-25-sep-2022-13-300x200.jpg',
+      ],
       galery2: null,
       titleRecomendaciones:
           'Recomendaciones para una visita segura y responsable',
@@ -640,6 +648,19 @@ Aunque la Capilla de Santa Bárbara no está abierta al público, se puede aprec
       galery1: [
         'assets/images/Oferta-gastronomica-La-Palma.jpg',
         'assets/images/Envuelto-de-maiz.png',
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
+    ),
+    "pan-bono": Atractivonatural(
+      image: "assets/images/Pan-de-Yuca.png",
+      title: "Pan de Bono",
+      mapUrl: '',
+      btns: [],
+      text: '''''',
+      galery1: [
+        'assets/images/Pan-de-Yuca.png',
       ], // Galería 1
       galery2: null,
       titleRecomendaciones: '',
@@ -767,6 +788,84 @@ Desde su cima, los visitantes pueden deleitarse con la belleza del paisaje monta
         'Planificar el transporte y alojamiento.',
         'Además de los actos religiosos, La Palma cuenta con hermosos paisajes y sitios como el Alto de la Cruz y la Capilla de Santa Bárbara, que son perfectos para visitas adicionales de reflexión y conexión con la naturaleza.'
       ],
+    ),
+    "santuario-nuestra-senora": Atractivonatural(
+        image: "assets/images/Cascada-del-ensueno (1).jpg",
+        title: 'SANTUARIO DE NUESTRA SEÑORA DE LA ASUNCIÓN',
+        mapUrl:
+            'https://www.google.com/maps?ll=5.360854,-74.390121&z=17&t=h&hl=es&gl=CO&mapclient=embed&cid=4176750847069182940',
+        btns: [
+          const LinkImageCard(
+            imageUrl: "assets/images/icons/Ubicacion.jpg",
+            label: "Calle 4 No. 5 – 62 y 5 – 26 parque principal La Palma",
+            link: "", // Replace with the actual link
+          ),
+          const LinkImageCard(
+            imageUrl: "assets/images/icons/Icono-Brujula.jpg",
+            label: "5°21’39”N 74°23’24”W",
+            link: "", // Replace with the actual link
+          ),
+          const LinkImageCard(
+            imageUrl:
+                "assets/images/icons/la-palma-realidad-aumentada-turismo.png",
+            label: "3D",
+            link:
+                "https://poly.cam/capture/61b434fb-7c19-4e12-b5eb-964f75ce80fc%20",
+          ),
+          const LinkImageCard(
+            imageUrl:
+                "assets/images/icons/la-palma-realidad-aumentada-turismo.png",
+            label: "Realidad Aumentada",
+            link:
+                "https://www.lookiar.com/models/0b78389f1ea800e90dfad3ba64501a87/view?live=1&show_url_button=1&smref=1%20",
+          ),
+          const LinkImageCard(
+            imageUrl: "assets/images/icons/Icono-Telefono.jpg",
+            label: "Teléfono: 318 3118637",
+            link: "", // Replace with the actual link
+          ),
+          const LinkImageCard(
+            imageUrl: "assets/images/icons/Icono-Horario.jpg",
+            label: "Horario: Cierra a las 5:00 pm.",
+            link: "", // Replace with the actual link
+          ),
+        ],
+        text:
+            '''Este hermoso templo, dedicado a la patrona de La Palma, es el epicentro de celebraciones de gran significado, como las festividades anuales y la solemne bajada y subida de la imagen de la Virgen cada siete años. 
+
+Con su arquitectura tradicional y un ambiente de recogimiento, el santuario se convierte en un punto de peregrinación para aquellos que buscan rendir homenaje a la Virgen y encontrar paz espiritual. Además, alberga el “Museo de Arte y Cultura Religiosa”, que preserva vestidos y objetos litúrgicos, que reflejan la rica historia de la fe de esta población cundinamarquesa. ''',
+        galery1: [
+          'assets/images/La-Palma-25-sep-2022-13-300x200.jpg',
+          'assets/images/La-Palma-25-sep-2022-5-300x200.jpg',
+        ], // Galería 1
+        galery2: null,
+        titleRecomendaciones:
+            'Recomendaciones para una visita segura y responsable',
+        recomendaciones: [
+          "Vístase con ropa modesta y respetuosa, evitando prendas muy cortas o reveladoras.",
+          "Mantenga un tono de voz bajo y apague su teléfono móvil para no interrumpir la atmósfera de recogimiento.",
+          "Verifique si está permitido tomar fotos antes de hacerlo, y respete las normas del lugar.",
+          "Infórmese sobre los horarios de apertura y cierre, así como de las misas o ceremonias que se celebran.",
+          "Investigue y respete las costumbres y reglas específicas del santuario.",
+          "Considere hacer una pequeña donación para el mantenimiento del santuario y el Museo de Arte y Cultura Religiosa.",
+          "Dedique tiempo para la contemplación o meditación, aprovechando la serenidad del lugar.",
+          "No interrumpa a quienes estén orando o en momentos de recogimiento.",
+          "Cuide el entorno, asegurándose de no dejar basura y manteniendo la limpieza del lugar."
+        ]),
+    "sopa-balines": Atractivonatural(
+      image: "assets/images/Cascada-del-ensueno (1).jpg",
+      title: "Chanfaina/Sopa Balines",
+      mapUrl: '',
+      btns: [],
+      text:
+          '''La chanfaina o sopa de balines es un plato tradicional y nutritivo, preparado con vísceras, menudo, arroz, arvejas secas y papa. Para su elaboración, se limpian y cocinan las vísceras y el menudo hasta que estén tiernos. Mientras se cocinan, se preparan las papas, arvejas y arroz. Una vez listos los ingredientes, se sofríen cebolla, ajo y especias como comino y cilantro en polvo. Se agrega el caldo de las vísceras, las papas, arvejas, arroz y las vísceras cocidas. La sopa se deja cocinar hasta que el arroz esté listo y las papas estén tiernas. Finalmente, se ajusta la sazón y se sirve caliente, acompañada de cilantro fresco.''',
+      galery1: [
+        'assets/images/Sopa-de-balines-2-400x284.png',
+        'assets/images/Sopa-de-balines-3-400x284.png'
+      ], // Galería 1
+      galery2: null,
+      titleRecomendaciones: '',
+      recomendaciones: [],
     ),
   };
 

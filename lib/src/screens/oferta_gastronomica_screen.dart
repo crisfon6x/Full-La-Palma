@@ -9,6 +9,7 @@ import 'package:palma_municipio/src/app.dart/constants.dart';
 import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
 import 'package:palma_municipio/src/widgets/image_component.dart';
 import 'package:palma_municipio/src/widgets/title_divider.dart';
+import 'package:palma_municipio/src/widgets/video_player.dart';
 
 class OfertaGastronomicaScreen extends StatelessWidget {
   const OfertaGastronomicaScreen({super.key});
@@ -17,7 +18,7 @@ class OfertaGastronomicaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<CarouselItem> carouselItems = [
       CarouselItem(
-        image: "assets/images/Turismo-religioso-Banner-3.png",
+        image: "assets/images/Gastronomia_.jpg",
         title: "OFERTA GASTRÓMICA",
         subtitle: "La Palma",
       ),
@@ -66,11 +67,10 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
       const SizedBox(
         height: 16.0,
       ),
-      const StyledImage(
-        imageUrl:
-            'assets/images/Oferta-gastronomica-La-Palma.jpg', // Replace with your image path
-        borderRadius: 16.0,
-      ),
+      VideoWidget(
+          assetPath: 'assets/videos/Video-No.-4-Gastronomia-La-Palma.mp4',
+          autoPlay: true,
+          looping: true),
       const SizedBox(
         height: 16.0,
       ),
@@ -154,9 +154,19 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
                       atractivonatural:
                           getDataAtractivoNatural("arepa-cemento"))))),
       ImageCardModel(
-          title: "ENVUELTOS DE MAÍZ",
+          title: "SOPA BALINES",
           subtitle: "",
           image: "assets/images/sopa-de-balines.png",
+          method: (context) => Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => AtractivoNaturalScreen(
+                      atractivonatural:
+                          getDataAtractivoNatural("sopa-balines"))))),
+      ImageCardModel(
+          title: "ENVUELTOS DE MAIZ",
+          subtitle: "",
+          image: "assets/images/Envuelto-de-maiz (1).png",
           method: (context) => Navigator.push(
               context,
               MaterialPageRoute(

@@ -19,6 +19,8 @@ import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:palma_municipio/src/widgets/image_component.dart';
 import 'package:palma_municipio/src/widgets/title_divider.dart';
+import 'package:palma_municipio/src/widgets/video_player.dart';
+import 'package:video_player/video_player.dart';
 
 final List<Carouselbutton> categories = [
   Carouselbutton(
@@ -96,8 +98,7 @@ class DiscoverScreen extends StatelessWidget {
       ),
     ];
 
-    const title =
-        "Descubre La Palma: Naturaleza, cultura y encanto de Cundinamarca.";
+    const title = "Descubre La Palma: Naturaleza, cultura y encanto.";
     const description1 =
         '''¿Si buscas tranquilidad, paz y conexión con la naturaleza? ¡La Palma es tu destino ideal!
 
@@ -106,8 +107,7 @@ Ubicado a solo 150 kilómetros al noroeste de Bogotá, este encantador municipio
     const description2 =
         '''Este tesoro natural y cultural del departamento de Cundinamarca cuenta con un clima cálido y agradable de 21°C, que ofrece un entorno espectacular en las faldas de la majestuosa cordillera de la Osa. Desde sus miradores, el Alto de la Cruz y San Javier enmarcan una vista panorámica impresionante de verdes montañas y valles profundos.
 
-La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su historia. Aquí, el entorno natural no solo embellece, sino que también impulsa la vida económica y cultural de sus pobladores, que viven en armonía con la tierra y sus riquezas.
-                          ''';
+La Palma no sólo cautiva por sus paisajes, sino también por su comunidad y su historia. Aquí, el entorno natural no sólo embellece, sino que también impulsa la vida económica y cultural de sus pobladores, que viven en armonía con la tierra y sus riquezas.''';
 
     var children = [
       Text(
@@ -123,10 +123,10 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
         description1,
         style: TextStyle(fontSize: 16),
       ),
-      const StyledImage(
-        imageUrl:
-            'assets/images/Mirador_cañada.png', // Replace with your image path
-        borderRadius: 16.0,
+      const VideoWidget(
+        assetPath: 'assets/videos/Video-No.-1-La-Palma.mp4',
+        autoPlay: true,
+        looping: true,
       ),
       const Text(
         description2,
@@ -229,16 +229,6 @@ La Palma no solo cautiva por sus paisajes, sino también por su comunidad y su h
 
   List<Widget> getImageCards() {
     List<ImageCardModel> cardData = [
-      ImageCardModel(
-          title: "MIRADOR LA CUCHILLA",
-          subtitle: "Mirador de la Antena o la Torre",
-          image:
-              "assets/images/Mirador-de-colina-o-la-antena-o-la-cuchilla.jpg",
-          method: (context) => Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural: getDataAtractivoNatural(""))))),
       ImageCardModel(
           title: "MIRADOR LA CAÑADA",
           subtitle: "",

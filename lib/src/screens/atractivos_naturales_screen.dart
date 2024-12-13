@@ -98,11 +98,11 @@ class AtractivosNaturales extends StatelessWidget {
       ),
     ];
     const description1 =
-        'La Palma es un verdadero refugio natural, con paisajes montañosos y vastas áreas verdes que ofrecen el escenario perfecto tanto para la aventura como para el descanso. Entre sus atractivos se destacan miradores el Alto de la Cruz, La Cuchilla (Alto Grande o la Torre), Alto de la Osa y la Cañada, que regalan vistas espectaculares, majestuosas montañas como la India Dormida, el río Murca, quebradas de aguas cristalinas y refrescantes cascadas, que te conectan con su entorno.';
+        '''La Palma es un verdadero refugio natural, con paisajes montañosos, que ofrecen el escenario perfecto tanto para la aventura como para el descanso. Entre sus atractivos se destacan miradores el Alto de la Cruz, La Cuchilla o la Torre, Alto de la Osa, la Cañada y Alto Grande, que regalan vistas espectaculares, majestuosas montañas como la India Dormida. El río Murca y quebradas de aguas cristalinas y refrescantes cascadas.''';
     const description2 =
-        '''Los exuberantes bosques y colinas que rodean La Palma, crean un entorno ideal para el ecoturismo, proporcionando oportunidades únicas para adentrarse en la biodiversidad local. Aquí, cada sendero y rincón natural se convierten en una experiencia auténtica, donde los visitantes pueden disfrutar de un escape revitalizante y lleno de tranquilidad en medio de una naturaleza sorprendente.
+        ''' Los exuberantes bosques y colinas que rodean La Palma crean un entorno ideal para el ecoturismo, proporcionando oportunidades únicas para adentrarse en la biodiversidad local. Aquí, cada sendero y rincón natural se convierte en una experiencia auténtica, donde los visitantes pueden disfrutar de un escape revitalizante y lleno de tranquilidad en medio de una naturaleza sorprendente.
 
-¡La Palma es el destino perfecto para quienes buscan aventura y serenidad en un solo lugar!''';
+ ¡La Palma es el destino perfecto para quienes buscan aventura y serenidad en un solo lugar!''';
     const faunaDescription =
         '''La diversidad de la fauna en La Palma es un verdadero tesoro natural. Entre las aves se encuentra el pájaro moteado, que se destaca por sus llamativos colores, mientras que la boruga y el guache completan este fascinante mosaico de vida silvestre. También existen mamíferos, entre ellos: el armadillo de nueve bandas, el cuatí y el tejón o mapache, que habitan los bosques junto a la ardilla y el conejo. El caimán de aguja y varias especies de serpientes también forman parte de la fauna local, enriqueciendo la región. Además, animales como la comadreja, el cusumbo y la chuchita colicorta se ocultan entre la vegetación.''';
     const floraDescription =
@@ -116,6 +116,15 @@ class AtractivosNaturales extends StatelessWidget {
           fontSize: 25,
           fontWeight: FontWeight.w700,
           fontStyle: FontStyle.normal,
+          color: AppColors.celeste, // Use text color from the property
+        ),
+      ),
+      Text(
+        AppTexts.titleAtractivosNaturales2,
+        style: GoogleFonts.leagueSpartan(
+          fontSize: 25,
+          fontWeight: FontWeight.w700,
+          fontStyle: FontStyle.normal,
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
@@ -123,7 +132,7 @@ class AtractivosNaturales extends StatelessWidget {
         description1,
         style: const TextStyle(fontSize: 16),
       ),
-      const SizedBox(height: 16.0),
+      const SizedBox(height: 8.0),
       const StyledImage(
         imageUrl:
             'assets/images/Atractivos Naturales (3).jpg', // Replace with your image path
@@ -163,7 +172,7 @@ class AtractivosNaturales extends StatelessWidget {
         imageUrl: "assets/images/icons/vr.jpg",
         label: "Realidad Aumentada Serpiente",
         link:
-            "https://www.lookiar.com/models/2625a82c3c6ddd02866d84ce4fe43e0e/view?live=1&show_url_button=1&smref=1", // Replace with the actual link
+            "https://www.lookiar.com/models/ddfe339aaf8b3a60ee85ea3e8c0a984c/view", // Replace with the actual link
       ),
       Text(
         faunaDescription,
@@ -264,16 +273,6 @@ class AtractivosNaturales extends StatelessWidget {
                       atractivonatural:
                           getDataAtractivoNatural("rio-murca"))))),
       ImageCardModel(
-          title: "MIRADOR LA CAÑADA",
-          subtitle: "",
-          image: "assets/images/Puente-de-oro- (1).jpg",
-          method: (context) => Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural:
-                          getDataAtractivoNatural("mirador-cunada"))))),
-      ImageCardModel(
           title: "MINIPÍ DE QUIJANO",
           subtitle: "",
           image:
@@ -283,17 +282,6 @@ class AtractivosNaturales extends StatelessWidget {
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
                       atractivonatural: getDataAtractivoNatural("minipi"))))),
-      ImageCardModel(
-          title: "MIRADOR LA CUCHILLA",
-          subtitle: "",
-          image:
-              "assets/images/Mirador-de-colina-o-la-antena-o-la-cuchilla (1).jpg",
-          method: (context) => Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural:
-                          getDataAtractivoNatural("mirador-cuchilla"))))),
       ImageCardModel(
           title: "CIERRA DE LA INDIA DORMIDA",
           subtitle: "",

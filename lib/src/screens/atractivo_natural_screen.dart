@@ -8,6 +8,8 @@ import 'package:palma_municipio/src/widgets/image_component.dart';
 import 'package:palma_municipio/src/widgets/link_image_card.dart';
 import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
 import 'package:palma_municipio/src/widgets/recomendaciones.dart';
+import 'package:palma_municipio/src/widgets/video_player.dart';
+import 'package:video_player/video_player.dart';
 
 class AtractivoNaturalScreen extends StatelessWidget {
   final Atractivonatural atractivonatural;
@@ -35,6 +37,14 @@ class AtractivoNaturalScreen extends StatelessWidget {
       const SizedBox(
         height: 16.0,
       ),
+      (atractivonatural.videoUrl != null)
+          ? VideoWidget(
+              assetPath: atractivonatural.videoUrl!,
+              autoPlay: true,
+              looping: true)
+          : const SizedBox(
+              height: 0.0,
+            ),
       ...atractivonatural.btns,
       const SizedBox(
         height: 16,
@@ -64,7 +74,7 @@ class AtractivoNaturalScreen extends StatelessWidget {
           color: AppColors.primaryColor, // Use text color from the property
         ),
       ),
-      (atractivonatural.galery2 != null)
+      (atractivonatural.recomendaciones != null)
           ? Recomendaciones(items: atractivonatural.recomendaciones)
           : const SizedBox(
               height: 16.0,

@@ -23,8 +23,9 @@ class AppTexts {
   static const laPalma = 'La Palma';
   static const enRealidadAumentada = 'En realidad aumentada';
   static const aliados = 'Aliados';
-  static const titleAtractivosNaturales =
-      'Atractivos naturales de La Palma: Un paraíso para los amantes de la naturaleza';
+  static const titleAtractivosNaturales = 'Atractivos naturales La Palma: ';
+  static const titleAtractivosNaturales2 =
+      'Un paraíso para amantes de la naturaleza';
   static const turismoNaturaleza = 'Turismo de naturaleza';
   static const fauna = 'Fauna';
   static const flora = 'Flora';

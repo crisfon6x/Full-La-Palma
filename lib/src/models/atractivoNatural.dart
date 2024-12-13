@@ -10,6 +10,7 @@ class Atractivonatural {
   String? titleRecomendaciones;
   List<String> recomendaciones;
   String mapUrl;
+  String? videoUrl;
 
   Atractivonatural(
       {required this.title,
@@ -20,5 +21,6 @@ class Atractivonatural {
       required this.image,
       this.titleRecomendaciones,
       required this.recomendaciones,
-      required this.mapUrl});
+      required this.mapUrl,
+      this.videoUrl});
 }

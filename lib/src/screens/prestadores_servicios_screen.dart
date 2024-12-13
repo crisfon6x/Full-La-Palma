@@ -8,6 +8,7 @@ import 'package:palma_municipio/src/app.dart/constants.dart';
 import 'package:palma_municipio/src/widgets/image_component.dart';
 import 'package:palma_municipio/src/widgets/open_link_btn.dart';
 import 'package:palma_municipio/src/widgets/title_divider.dart';
+import 'package:palma_municipio/src/widgets/video_player.dart';
 
 class PrestadoresServiciosScreen extends StatelessWidget {
   const PrestadoresServiciosScreen({super.key});
@@ -142,11 +143,11 @@ class PrestadoresServiciosScreen extends StatelessWidget {
       const SizedBox(
         height: 16.0,
       ),
-      const StyledImage(
-        imageUrl:
-            'assets/images/Asoturispal-1.jpg', // Replace with your image path
-        borderRadius: 16.0,
-      ),
+      VideoWidget(
+          assetPath:
+              'assets/videos/Video-No.-5-Cronica-evolucion-turismo-La-Palma.mp4',
+          autoPlay: true,
+          looping: true),
       const SizedBox(
         height: 16.0,
       ),

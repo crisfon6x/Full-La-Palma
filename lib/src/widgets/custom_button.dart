@@ -22,33 +22,37 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor, // Background color
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius), // Rounded corners
-        ),
-        elevation: 4, // Button shadow
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-      ),
-      onPressed: onPressed,
-      child: Row(
-        mainAxisSize: MainAxisSize.min, // Fit content
-        children: [
-          if (leadingImage != null) ...[
-            leadingImage!, // Display the image/icon if provided
-            const SizedBox(width: 8), // Spacing between image and text
-          ],
-          Text(
-            text,
-            style: GoogleFonts.leagueSpartan(
-              fontSize: 15,
-              fontWeight: FontWeight.w700,
-              fontStyle: FontStyle.normal,
-              color: textColor, // Use text color from the property
-            ),
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColor, // Background color
+          shape: RoundedRectangleBorder(
+            borderRadius:
+                BorderRadius.circular(borderRadius), // Rounded corners
           ),
-        ],
+          elevation: 4, // Button shadow
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+        ),
+        onPressed: onPressed,
+        child: Row(
+          mainAxisSize: MainAxisSize.min, // Fit content
+          children: [
+            if (leadingImage != null) ...[
+              leadingImage!, // Display the image/icon if provided
+              const SizedBox(width: 8), // Spacing between image and text
+            ],
+            Text(
+              text,
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 15,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color: textColor, // Use text color from the property
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

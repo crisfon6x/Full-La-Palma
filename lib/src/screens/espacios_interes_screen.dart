@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/models/image_card.dart';
-import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
-import 'package:palma_municipio/src/screens/eventos_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import '../components/foooter_component.dart';
+import '../models/carouselItem.dart';
+import '../widgets/carousel_component.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/widgets/custom_button.dart';
-import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
-import 'package:palma_municipio/src/widgets/image_btn.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/title_divider.dart';
+import '../app.dart/constants.dart';
+import '../widgets/image_component.dart';
+import '../widgets/title_divider.dart';
 
 class EspaciosInteresScreen extends StatelessWidget {
   const EspaciosInteresScreen({super.key});

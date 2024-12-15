@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/models/atractivoNatural.dart';
-import 'package:palma_municipio/src/models/btnIcon.dart';
-import 'package:palma_municipio/src/models/post.dart';
-import 'package:palma_municipio/src/widgets/link_image_card.dart';
+import '../models/atractivoNatural.dart';
+import '../widgets/link_image_card.dart';
 
 Atractivonatural getDataAtractivoNatural(String atractivo) {
   Map<String, Atractivonatural> atractivosNaturales = {

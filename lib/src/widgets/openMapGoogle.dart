@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/widgets/custom_button.dart';
+import '../widgets/custom_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class OpenMapButton extends StatelessWidget {

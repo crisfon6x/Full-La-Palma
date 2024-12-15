@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/widgets/open_link_btn.dart';
-import 'package:url_launcher/url_launcher.dart';
+import '../app.dart/constants.dart';
+import '../widgets/open_link_btn.dart';
 
 class AsociacionCard extends StatelessWidget {
   final String title;

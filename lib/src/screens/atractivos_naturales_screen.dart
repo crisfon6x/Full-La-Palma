@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/models/image_card.dart';
-import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/link_image_card.dart';
-import 'package:palma_municipio/src/widgets/title_divider.dart';
-import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
+import '../app.dart/constants.dart';
+import '../components/foooter_component.dart';
+import '../models/carouselItem.dart';
+import '../models/image_card.dart';
+import '../screens/atractivo_natural_screen.dart';
+import '../utils/utils.dart';
+import '../widgets/carousel_component.dart';
+import '../widgets/image_component.dart';
+import '../widgets/link_image_card.dart';
+import '../widgets/title_divider.dart';
+import '../widgets/imageCardComponent.dart';
 
 class AtractivosNaturales extends StatelessWidget {
   const AtractivosNaturales({super.key});

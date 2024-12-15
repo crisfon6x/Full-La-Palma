@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import '../components/foooter_component.dart';
+import '../models/carouselItem.dart';
+import '../widgets/carousel_component.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
+import '../app.dart/constants.dart';
 
 class ServiciosTuristicosScreen extends StatelessWidget {
   const ServiciosTuristicosScreen({super.key});

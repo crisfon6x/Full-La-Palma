@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/atractivoNatural.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/link_image_card.dart';
-import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
-import 'package:palma_municipio/src/widgets/recomendaciones.dart';
-import 'package:palma_municipio/src/widgets/video_player.dart';
+import '../app.dart/constants.dart';
+import '../components/foooter_component.dart';
+import '../models/atractivoNatural.dart';
+import '../models/carouselItem.dart';
+import '../widgets/carousel_component.dart';
+import '../widgets/image_component.dart';
+import '../widgets/link_image_card.dart';
+import '../widgets/openMapGoogle.dart';
+import '../widgets/recomendaciones.dart';
+import '../widgets/video_player.dart';
 import 'package:video_player/video_player.dart';
 
 class AtractivoNaturalScreen extends StatelessWidget {

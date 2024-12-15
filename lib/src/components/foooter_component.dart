@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
-import 'package:palma_municipio/src/widgets/custom_button.dart';
+import '../models/carouselItem.dart';
+import '../widgets/carousel_component.dart';
 
 class AppFooter extends StatelessWidget {
   const AppFooter({

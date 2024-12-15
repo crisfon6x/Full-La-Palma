@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
+import '../models/carouselItem.dart';
 
 class CarouselComponent extends StatefulWidget {
   final List<CarouselItem> items; // List of images, titles, and subtitles

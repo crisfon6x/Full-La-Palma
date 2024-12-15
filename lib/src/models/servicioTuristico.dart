@@ -1,4 +1,4 @@
-import 'package:palma_municipio/src/models/carouselItem.dart';
+import './carouselItem.dart';
 
 class Servicioturistico {
   String name;

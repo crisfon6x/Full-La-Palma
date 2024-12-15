@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/models/image_card.dart';
-import 'package:palma_municipio/src/models/post.dart';
-import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
+import '../app.dart/constants.dart';
+import '../components/foooter_component.dart';
+import '../models/post.dart';
+import '../widgets/image_component.dart';
 
 class PostScreen extends StatelessWidget {
   final Post post;

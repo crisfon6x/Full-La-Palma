@@ -1,4 +1,4 @@
-import 'package:palma_municipio/src/widgets/link_image_card.dart';
+import '../widgets/link_image_card.dart';
 
 class Atractivonatural {
   String title;

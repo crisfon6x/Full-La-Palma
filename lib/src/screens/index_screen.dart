@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/screens/discover_screen.dart';
-import 'package:palma_municipio/src/screens/espacios_interes_screen.dart';
-import 'package:palma_municipio/src/screens/guias_servicio_turistico.dart';
-import 'package:palma_municipio/src/screens/oferta_gastronomica_screen.dart';
-import 'package:palma_municipio/src/screens/prestadores_servicios_screen.dart';
-import 'package:palma_municipio/src/screens/red_servicios_screen.dart';
-import 'package:palma_municipio/src/screens/sostenibilidad_screen.dart';
-import 'package:palma_municipio/src/screens/turismo_religioso_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/custom_button.dart';
-import 'package:palma_municipio/src/screens/atractivos_naturales_screen.dart';
-import 'package:palma_municipio/src/widgets/image_btn.dart';
+import '../app.dart/constants.dart';
+import '../components/foooter_component.dart';
+import './discover_screen.dart';
+import './espacios_interes_screen.dart';
+import './guias_servicio_turistico.dart';
+import './oferta_gastronomica_screen.dart';
+import './prestadores_servicios_screen.dart';
+import './red_servicios_screen.dart';
+import './sostenibilidad_screen.dart';
+import './turismo_religioso_screen.dart';
+import '../utils/utils.dart';
+import '../widgets/custom_button.dart';
+import './atractivos_naturales_screen.dart';
+import '../widgets/image_btn.dart';
 
 class IndexScreen extends StatelessWidget {
   const IndexScreen({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
+import '../app.dart/constants.dart';
 
 class Recomendaciones extends StatelessWidget {
   final List<String> items;

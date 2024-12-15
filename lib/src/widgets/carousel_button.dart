@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import '../app.dart/constants.dart';
+import '../models/carouselItem.dart';
+import '../widgets/carousel_component.dart';
 
 class CarouselButton extends StatelessWidget {
   final List<CarouselItem> items;

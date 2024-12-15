@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/atractivoNatural.dart';
-import 'package:palma_municipio/src/models/carouselButton.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/models/image_card.dart';
-import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
-import 'package:palma_municipio/src/screens/atractivos_naturales_screen.dart';
-import 'package:palma_municipio/src/screens/guias_servicio_turistico.dart';
-import 'package:palma_municipio/src/screens/oferta_gastronomica_screen.dart';
-import 'package:palma_municipio/src/screens/servicios_turisticos_screen.dart';
-import 'package:palma_municipio/src/screens/turismo_religioso_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/card_contact.dart';
-import 'package:palma_municipio/src/widgets/carousel_button.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
-import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
-import 'package:palma_municipio/src/widgets/openMapGoogle.dart';
+import '../app.dart/constants.dart';
+import '../components/foooter_component.dart';
+import '../models/carouselButton.dart';
+import '../models/carouselItem.dart';
+import '../models/image_card.dart';
+import './atractivo_natural_screen.dart';
+import './atractivos_naturales_screen.dart';
+import './guias_servicio_turistico.dart';
+import './oferta_gastronomica_screen.dart';
+import './turismo_religioso_screen.dart';
+import '../utils/utils.dart';
+import '../widgets/card_contact.dart';
+import '../widgets/carousel_button.dart';
+import '../widgets/carousel_component.dart';
+import '../widgets/imageCardComponent.dart';
+import '../widgets/openMapGoogle.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/title_divider.dart';
-import 'package:palma_municipio/src/widgets/video_player.dart';
-import 'package:video_player/video_player.dart';
+import '../widgets/title_divider.dart';
+import '../widgets/video_player.dart';
 
 final List<Carouselbutton> categories = [
   Carouselbutton(

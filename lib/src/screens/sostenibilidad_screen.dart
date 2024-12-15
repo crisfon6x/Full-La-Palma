@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:palma_municipio/src/components/foooter_component.dart';
-import 'package:palma_municipio/src/models/carouselButton.dart';
-import 'package:palma_municipio/src/models/carouselItem.dart';
-import 'package:palma_municipio/src/models/image_card.dart';
-import 'package:palma_municipio/src/models/post.dart';
-import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
-import 'package:palma_municipio/src/screens/atractivos_naturales_screen.dart';
-import 'package:palma_municipio/src/screens/post_screen.dart';
-import 'package:palma_municipio/src/utils/utils.dart';
-import 'package:palma_municipio/src/widgets/carousel_button.dart';
-import 'package:palma_municipio/src/widgets/carousel_component.dart';
+import '../components/foooter_component.dart';
+import '../models/carouselItem.dart';
+import '../models/post.dart';
+import '../screens/post_screen.dart';
+import '../widgets/carousel_button.dart';
+import '../widgets/carousel_component.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
-import 'package:palma_municipio/src/widgets/imageCardComponent.dart';
-import 'package:palma_municipio/src/widgets/image_component.dart';
-import 'package:palma_municipio/src/widgets/post_card.dart';
-import 'package:palma_municipio/src/widgets/recomendacion_number.dart';
-import 'package:palma_municipio/src/widgets/title_divider.dart';
+import '../app.dart/constants.dart';
+import '../widgets/post_card.dart';
+import '../widgets/recomendacion_number.dart';
 
 class SostenibilidadScreen extends StatelessWidget {
   const SostenibilidadScreen({super.key});

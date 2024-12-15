@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:palma_municipio/src/screens/index_screen.dart';
-import 'package:palma_municipio/src/app.dart/constants.dart';
+import 'src/screens/index_screen.dart';
+import 'src/app.dart/constants.dart';
 
 void main() => runApp(const MyApp());
 

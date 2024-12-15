@@ -7,6 +7,8 @@ class CarouselComponent extends StatefulWidget {
   final double height; // Height of the carousel
   final bool autoPlay; // Enable or disable autoplay
   final double border_radius;
+  final bool implementIndicators;
+  final BoxFit boxfit;
   final void Function(int index, CarouselItem item)?
       onItemClick; // Callback for item clicks
 
@@ -15,7 +17,9 @@ class CarouselComponent extends StatefulWidget {
       required this.items, // Dynamic content
       this.height = 400.0, // Default height
       this.autoPlay = true, // Default autoplay
-      this.onItemClick, // Optional callback for clicks
+      this.onItemClick,
+      this.boxfit = BoxFit.cover, // Optional callback for clicks
+      this.implementIndicators = true,
       this.border_radius = 0.0});
 
   @override
@@ -49,7 +53,7 @@ class _CarouselComponentState extends State<CarouselComponent> {
                         widget.border_radius), // Rounded corners
                     child: Image.asset(
                       item.image,
-                      fit: BoxFit.cover,
+                      fit: widget.boxfit,
                     ),
                   ),
 
@@ -97,25 +101,28 @@ class _CarouselComponentState extends State<CarouselComponent> {
           ),
         ),
         // Indicators
-        Positioned(
-          bottom: 10,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: widget.items.map((item) {
-              int index = widget.items.indexOf(item);
-              return Container(
-                width: 8.0,
-                height: 8.0,
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0),
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: _currentIndex == index ? Colors.white : Colors.grey,
+        (widget.implementIndicators)
+            ? Positioned(
+                bottom: 10,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: widget.items.map((item) {
+                    int index = widget.items.indexOf(item);
+                    return Container(
+                      width: 8.0,
+                      height: 8.0,
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 4.0),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color:
+                            _currentIndex == index ? Colors.white : Colors.grey,
+                      ),
+                    );
+                  }).toList(),
                 ),
-              );
-            }).toList(),
-          ),
-        ),
+              )
+            : SizedBox()
       ],
     );
   }

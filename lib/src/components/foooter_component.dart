@@ -99,60 +99,64 @@ class AppFooter extends StatelessWidget {
       ),
     ];
 
-    return Container(
-      color: Colors.grey[200],
-      child: Column(
-        children: [
-          const SizedBox(height: 8),
-          const Text(
-            'Sostenibilidad',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 8),
-          CarouselComponent(
-            items: carouselItems, // Pass the dynamic content
-            height: 100.0, // Optional height
-            autoPlay: true,
-            boxfit: BoxFit.contain, // Optional autoplay behavior
-            implementIndicators: false,
-          ),
-          const SizedBox(height: 8),
-          Container(
-              padding: const EdgeInsets.all(16.0),
-              margin: const EdgeInsets.symmetric(vertical: 20.0),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15.0),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
-                    blurRadius: 5.0,
-                    offset: const Offset(0, 5),
-                  ),
-                ],
+    return Column(
+      children: [
+        Container(
+          color: Colors.grey[200],
+          child: Column(
+            children: [
+              const SizedBox(height: 8),
+              const Text(
+                'Sostenibilidad',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      "assets/images/footer/entidades/logo-color-marca-cundinamarca-40b1256e.png",
-                      fit: BoxFit.cover,
-                      height: 80, // Adjust height as needed
-                    ),
-                    Image.asset(
-                      "assets/images/footer/entidades/Logo-FULL-libertadores.png",
-                      fit: BoxFit.cover,
-                      height: 80, // Adjust height as needed
-                    ),
-                    Image.asset(
-                      "assets/images/footer/entidades/Logo-GobCund-2024-2027-WEB-450x208-1.png",
-                      fit: BoxFit.cover,
-                      height: 80, // Adjust height as needed
-                    ),
-                  ]))
-        ],
-      ),
+              const SizedBox(height: 8),
+              CarouselComponent(
+                items: carouselItems, // Pass the dynamic content
+                height: 100.0, // Optional height
+                autoPlay: true,
+                boxfit: BoxFit.contain, // Optional autoplay behavior
+                implementIndicators: false,
+              ),
+              const SizedBox(height: 8),
+              Container(
+                  padding: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 20.0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15.0),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.3),
+                        blurRadius: 5.0,
+                        offset: const Offset(0, 5),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          "assets/images/footer/entidades/logo-color-marca-cundinamarca-40b1256e.png",
+                          fit: BoxFit.cover,
+                          height: 80, // Adjust height as needed
+                        ),
+                        Image.asset(
+                          "assets/images/footer/entidades/Logo-FULL-libertadores.png",
+                          fit: BoxFit.cover,
+                          height: 80, // Adjust height as needed
+                        ),
+                        Image.asset(
+                          "assets/images/footer/entidades/Logo-GobCund-2024-2027-WEB-450x208-1.png",
+                          fit: BoxFit.cover,
+                          height: 80, // Adjust height as needed
+                        ),
+                      ]))
+            ],
+          ),
+        )
+      ],
     );
   }
 }

@@ -215,7 +215,7 @@ La Palma no sólo cautiva por sus paisajes, sino también por su comunidad y su 
               autoPlay: true, // Optional autoplay behavior
             ),
             ...children,
-            AppFooter()
+            const AppFooter()
           ],
         ),
       ),

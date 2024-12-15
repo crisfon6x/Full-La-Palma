@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/widgets/carousel_component.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -1174,6 +1175,7 @@ class RedServiciosScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16.0),
               ...children,
+              AppFooter()
             ],
           ),
         ),

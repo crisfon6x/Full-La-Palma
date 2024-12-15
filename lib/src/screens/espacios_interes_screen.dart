@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
 import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
@@ -267,626 +268,628 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
         '''En el establecimiento de la Sra . Yolanda, las artesanías elaboradas en amero reflejan la riqueza cultural y las habilidades manuales de La Palma. Entre los productos más destacados se encuentran figuras decorativas y flores artificiales, las cuales no solo resaltan por su estética natural y sostenible, sino que también preservan una tradición que fusiona la vida rural y la creatividad popular, haciendo de cada pieza un homenaje a la historia y el arte local.''';
     const description10 =
         '''Es un pilar clave en el fomento de la lectura, el conocimiento y la cultura en la comunidad. Con una amplia colección de libros, que abarca desde literatura clásica hasta textos educativos, la biblioteca ofrece recursos accesibles para todas las edades. Además, organiza talleres, charlas y eventos culturales, promoviendo el aprendizaje continuo y el acceso a la información. Este espacio se ha convertido en un lugar de encuentro para estudiantes, investigadores y amantes de la lectura, desempeñando un papel fundamental en el desarrollo educativo y cultural del municipio.''';
-    var list = [
-      Text(
-        'Ferias y Fiestas de la Palma:',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
-      ),
-      Text(
-        'Un Reflejo de Tradición y Comunidad',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        description1,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const StyledImage(
-        imageUrl:
-            'assets/images/Ferias-y-Fiestas-La-palma-cundinamarca.jpg', // Replace with your image path
-        borderRadius: 16.0,
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        description2,
-        style: const TextStyle(fontSize: 16),
-      ),
-      CustomButton(
-        text: 'Ver calendario Ferias y Fiestas 2025',
-        onPressed: () {
-          getNavigator(context, () => const EventosScreen());
-        },
-        leadingImage: ImageBtn('assets/images/icons/calendar.png'),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Parques',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        'Parque Diana Turbay: Un Espacio de Encuentro y Naturaleza',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 22,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.explore,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              '5°21’38”N 74°23’25”W',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.location_on,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Calle 3 No. 4 – 40',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        description3,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      const StyledImage(
-        imageUrl:
-            'assets/images/Parque-Principal-Diana-Turbay-1-768x576.jpg', // Replace with your image path
-        borderRadius: 16.0,
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Parques deportivos',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        description4,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        'Parque biosaludable',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.location_on,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Dirreciòn: Carrera 2da No. 7 - Barrio Kennedy',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        description5,
-        style: const TextStyle(fontSize: 16),
-      ),
-      CarouselComponent(
-        items: carouselParques, // Pass the dynamic content
-        height: 200.0, // Optional height
-        autoPlay: true, // Optional autoplay behavior
-        border_radius: 12,
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        'Villa olímpica',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.location_on,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Barrio Matadero Nuevo',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const SizedBox(
-        height: 8.0,
-      ),
-      Text(
-        description6,
-        style: const TextStyle(fontSize: 16),
-      ),
-      CarouselComponent(
-        items: carouselVillaOlimpica, // Pass the dynamic content
-        height: 200.0, // Optional height
-        autoPlay: true, // Optional autoplay behavior
-        border_radius: 12,
-      ),
-      const SizedBox(
-        height: 16,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Plaza de Mercado',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        'Plaza de Mercado de La Palma: El Corazón Comercial y Cultural del Municipio',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.explore,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              '5°21’42”N 74°23’21”W',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.location_on,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Carrera 6 No. 2 – 103',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      Text(
-        description7,
-        style: const TextStyle(fontSize: 16),
-      ),
-      CarouselComponent(
-        items: carouselPlazaMercado, // Pass the dynamic content
-        height: 200.0, // Optional height
-        autoPlay: true, // Optional autoplay behavior
-        border_radius: 16,
-      ),
-      const SizedBox(
-        height: 16,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Museo',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.explore,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              '5°21’39”N 74°23’24”W',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.location_on,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Calle 4 No. 5 – 26',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.phone_android,
-            size: 15.0,
-            color: AppColors.primaryColor,
-          ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Teléfono: 318 3118637',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-      Text(
-        description7,
-        style: const TextStyle(fontSize: 16),
-      ),
-      CarouselComponent(
-        items: carouselMuseo, // Pass the dynamic content
-        height: 200.0, // Optional height
-        autoPlay: true, // Optional autoplay behavior
-        border_radius: 16,
-      ),
-      const SizedBox(
-        height: 16,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      const SizedBox(
-        height: 16,
-      ),
-      const Text(
-        'Artesanías de La Palma: Un Reflejo de Cultura y Creatividad Local',
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-      ),
-      Text(
-        description8,
-        style: const TextStyle(fontSize: 16),
-      ),
-      Container(
+    var list = Padding(
         padding: const EdgeInsets.all(16.0),
-        margin: const EdgeInsets.symmetric(vertical: 8.0),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15.0),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              blurRadius: 5.0,
-              offset: const Offset(0, 5),
+        child: Column(children: [
+          Text(
+            'Ferias y Fiestas de la Palma:',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
             ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Artesanías en Amero',
-              style: GoogleFonts.leagueSpartan(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                fontStyle: FontStyle.normal,
-                color:
-                    AppColors.primaryColor, // Use text color from the property
+          ),
+          Text(
+            'Un Reflejo de Tradición y Comunidad',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            description1,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const StyledImage(
+            imageUrl:
+                'assets/images/Ferias-y-Fiestas-La-palma-cundinamarca.jpg', // Replace with your image path
+            borderRadius: 16.0,
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            description2,
+            style: const TextStyle(fontSize: 16),
+          ),
+          // CustomButton(
+          //   text: 'Ver calendario Ferias y Fiestas 2025',
+          //   onPressed: () {
+          //     getNavigator(context, () => const EventosScreen());
+          //   },
+          //   leadingImage: ImageBtn('assets/images/icons/calendar.png'),
+          // ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Parques',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            'Parque Diana Turbay: Un Espacio de Encuentro y Naturaleza',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.explore,
+                size: 15.0,
+                color: AppColors.primaryColor,
               ),
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            CarouselComponent(
-              items: carouselArtesanias,
-              height: 200.0, // Optional height
-              autoPlay: true, // Optional autoplay behavior),
-              border_radius: 12.0,
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            const Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.location_on,
-                  size: 14.0,
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: Text(
-                    'Calle 6 No 3 - 01 Barrio La Puerta.',
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  '5°21’38”N 74°23’25”W',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 8.0),
-            const Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.phone_android,
-                  size: 14.0,
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: Text(
-                    '3138349684',
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            Text(
-              description9,
-              style: const TextStyle(fontSize: 16),
-            ),
-          ],
-        ),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Centros Culturales',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 24,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Container(
-        padding: const EdgeInsets.all(16.0),
-        margin: const EdgeInsets.symmetric(vertical: 8.0),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15.0),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              blurRadius: 5.0,
-              offset: const Offset(0, 5),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Biblioteca Municipal: sabiduría y cultura.',
-              style: GoogleFonts.leagueSpartan(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                fontStyle: FontStyle.normal,
-                color:
-                    AppColors.primaryColor, // Use text color from the property
               ),
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            CarouselComponent(
-              items: carouselLibrary,
-              height: 200.0, // Optional height
-              autoPlay: true, // Optional autoplay behavior),
-              border_radius: 12.0,
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            const Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.explore,
-                  size: 14.0,
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: Text(
-                    '5°21’46.98”N 74°23’21.62”W',
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+            ],
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Calle 3 No. 4 – 40',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
                   ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            description3,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const StyledImage(
+            imageUrl:
+                'assets/images/Parque-Principal-Diana-Turbay-1-768x576.jpg', // Replace with your image path
+            borderRadius: 16.0,
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Parques deportivos',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            description4,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            'Parque biosaludable',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Dirreciòn: Carrera 2da No. 7 - Barrio Kennedy',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            description5,
+            style: const TextStyle(fontSize: 16),
+          ),
+          CarouselComponent(
+            items: carouselParques, // Pass the dynamic content
+            height: 200.0, // Optional height
+            autoPlay: true, // Optional autoplay behavior
+            border_radius: 12,
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            'Villa olímpica',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Barrio Matadero Nuevo',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            description6,
+            style: const TextStyle(fontSize: 16),
+          ),
+          CarouselComponent(
+            items: carouselVillaOlimpica, // Pass the dynamic content
+            height: 200.0, // Optional height
+            autoPlay: true, // Optional autoplay behavior
+            border_radius: 12,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Plaza de Mercado',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            'Plaza de Mercado de La Palma: El Corazón Comercial y Cultural del Municipio',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
+            ),
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.explore,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  '5°21’42”N 74°23’21”W',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Carrera 6 No. 2 – 103',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Text(
+            description7,
+            style: const TextStyle(fontSize: 16),
+          ),
+          CarouselComponent(
+            items: carouselPlazaMercado, // Pass the dynamic content
+            height: 200.0, // Optional height
+            autoPlay: true, // Optional autoplay behavior
+            border_radius: 16,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Museo',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.explore,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  '5°21’39”N 74°23’24”W',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Calle 4 No. 5 – 26',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.phone_android,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Teléfono: 318 3118637',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Text(
+            description7,
+            style: const TextStyle(fontSize: 16),
+          ),
+          CarouselComponent(
+            items: carouselMuseo, // Pass the dynamic content
+            height: 200.0, // Optional height
+            autoPlay: true, // Optional autoplay behavior
+            border_radius: 16,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const Text(
+            'Artesanías de La Palma: Un Reflejo de Cultura y Creatividad Local',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            description8,
+            style: const TextStyle(fontSize: 16),
+          ),
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            margin: const EdgeInsets.symmetric(vertical: 8.0),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  blurRadius: 5.0,
+                  offset: const Offset(0, 5),
                 ),
               ],
             ),
-            const SizedBox(height: 8.0),
-            const Row(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
-                  Icons.location_on,
-                  size: 14.0,
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: Text(
-                    'Calle 2da La Palma',
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                Text(
+                  'Artesanías en Amero',
+                  style: GoogleFonts.leagueSpartan(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.normal,
+                    color: AppColors
+                        .primaryColor, // Use text color from the property
                   ),
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                CarouselComponent(
+                  items: carouselArtesanias,
+                  height: 200.0, // Optional height
+                  autoPlay: true, // Optional autoplay behavior),
+                  border_radius: 12.0,
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.location_on,
+                      size: 14.0,
+                    ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: Text(
+                        'Calle 6 No 3 - 01 Barrio La Puerta.',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8.0),
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.phone_android,
+                      size: 14.0,
+                    ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: Text(
+                        '3138349684',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                Text(
+                  description9,
+                  style: const TextStyle(fontSize: 16),
                 ),
               ],
             ),
-            const SizedBox(
-              height: 8.0,
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Centros Culturales',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 24,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
             ),
-            const Text(
-              'Biblioteca Municipal de La Palma: Un Centro de Sabiduría y Cultura',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            margin: const EdgeInsets.symmetric(vertical: 8.0),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  blurRadius: 5.0,
+                  offset: const Offset(0, 5),
+                ),
+              ],
             ),
-            Text(
-              description10,
-              style: const TextStyle(fontSize: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Biblioteca Municipal: sabiduría y cultura.',
+                  style: GoogleFonts.leagueSpartan(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.normal,
+                    color: AppColors
+                        .primaryColor, // Use text color from the property
+                  ),
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                CarouselComponent(
+                  items: carouselLibrary,
+                  height: 200.0, // Optional height
+                  autoPlay: true, // Optional autoplay behavior),
+                  border_radius: 12.0,
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.explore,
+                      size: 14.0,
+                    ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: Text(
+                        '5°21’46.98”N 74°23’21.62”W',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8.0),
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.location_on,
+                      size: 14.0,
+                    ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: Text(
+                        'Calle 2da La Palma',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                const Text(
+                  'Biblioteca Municipal de La Palma: Un Centro de Sabiduría y Cultura',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  description10,
+                  style: const TextStyle(fontSize: 16),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-    ];
+          ),
+        ]));
     final children = list;
     return Scaffold(
       body: SingleChildScrollView(
@@ -897,12 +900,8 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
               height: 200.0, // Optional height
               autoPlay: true, // Optional autoplay behavior
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
+            children,
+            AppFooter()
           ],
         ),
       ),

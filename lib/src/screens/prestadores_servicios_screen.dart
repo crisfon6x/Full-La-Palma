@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/asociacion.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/widgets/asociacion.dart';
@@ -65,97 +66,99 @@ class PrestadoresServiciosScreen extends StatelessWidget {
           name: 'Asociación Agropecuaria de Mujeres Emprendedoras (ASOLIDERES)',
           pdf: ''),
     ];
-    final children = [
-      Text(
-        'Prestadores de Servicios Turísticos',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 22,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.red, // Use text color from the property
-        ),
-      ),
-      Text(
-        'Asociación de Turismo Sostenible Palmero',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 22,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
-      ),
-      Text(
-        'ASOTURISPAL',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        description1,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(
-            Icons.phone_android,
-            size: 15.0,
-            color: AppColors.primaryColor,
+    final children = Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(children: [
+          Text(
+            'Prestadores de Servicios Turísticos',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.red, // Use text color from the property
+            ),
           ),
-          SizedBox(width: 8.0),
-          Expanded(
-            child: Text(
-              'Teléfono: 318 3118637',
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.bold,
+          Text(
+            'Asociación de Turismo Sostenible Palmero',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
+            ),
+          ),
+          Text(
+            'ASOTURISPAL',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            description1,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Icons.phone_android,
+                size: 15.0,
+                color: AppColors.primaryColor,
+              ),
+              SizedBox(width: 8.0),
+              Expanded(
+                child: Text(
+                  'Teléfono: 318 3118637',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          OpenLinkButton(
+            url: '',
+            buttonText: 'Descargar Portafolio PDF',
+            backgroundColor: AppColors.celeste,
+            textColor: AppColors.secondaryColor,
+            borderRadius: 16.0,
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+            trailingImage: ClipRRect(
+              borderRadius: BorderRadius.circular(12), // Rounded corners
+              child: const Icon(
+                Icons.picture_as_pdf,
+                size: 20.0,
+                color: AppColors.secondaryColor,
               ),
             ),
           ),
-        ],
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      OpenLinkButton(
-        url: '',
-        buttonText: 'Descargar Portafolio PDF',
-        backgroundColor: AppColors.celeste,
-        textColor: AppColors.secondaryColor,
-        borderRadius: 16.0,
-        fontSize: 16.0,
-        fontWeight: FontWeight.bold,
-        trailingImage: ClipRRect(
-          borderRadius: BorderRadius.circular(12), // Rounded corners
-          child: const Icon(
-            Icons.picture_as_pdf,
-            size: 20.0,
-            color: AppColors.secondaryColor,
+          const SizedBox(
+            height: 16.0,
           ),
-        ),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      VideoWidget(
-          assetPath:
-              'assets/videos/Video-No.-5-Cronica-evolucion-turismo-La-Palma.mp4',
-          autoPlay: true,
-          looping: true),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const TitleDivider(
-        text: 'Asociaciones',
-      ),
-      ...getAsociaciones(asociaciones),
-    ];
+          VideoWidget(
+              assetPath:
+                  'assets/videos/Video-No.-5-Cronica-evolucion-turismo-La-Palma.mp4',
+              autoPlay: true,
+              looping: true),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const TitleDivider(
+            text: 'Asociaciones',
+          ),
+          ...getAsociaciones(asociaciones),
+        ]));
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -165,12 +168,8 @@ class PrestadoresServiciosScreen extends StatelessWidget {
               height: 200.0, // Optional height
               autoPlay: true, // Optional autoplay behavior
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
+            children,
+            AppFooter()
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
 import 'package:palma_municipio/src/screens/atractivo_natural_screen.dart';
@@ -41,57 +42,59 @@ Además, durante los festivales gastronómicos que se celebran en el municipio, 
 
 La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sino que también invita a los visitantes a sumergirse en la calidez y hospitalidad de su gente, creando recuerdos imborrables que combinan tradición, sabor y cultura.
       ''';
-    final children = [
-      Text(
-        'La oferta gastronómica de La Palma',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
-      ),
-      Text(
-        'es un reflejo vibrante de su rica cultura y diversidad agrícola',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 24,
-          fontWeight: FontWeight.w900,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        description1,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      VideoWidget(
-          assetPath: 'assets/videos/Video-No.-4-Gastronomia-La-Palma.mp4',
-          autoPlay: true,
-          looping: true),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        description2,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Platos Típicos',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w900,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      ...getImageCards(),
-    ];
+    final children = Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(children: [
+          Text(
+            'La oferta gastronómica de La Palma',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
+            ),
+          ),
+          Text(
+            'es un reflejo vibrante de su rica cultura y diversidad agrícola',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 24,
+              fontWeight: FontWeight.w900,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            description1,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          VideoWidget(
+              assetPath: 'assets/videos/Video-No.-4-Gastronomia-La-Palma.mp4',
+              autoPlay: true,
+              looping: true),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            description2,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Platos Típicos',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w900,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          ...getImageCards(),
+        ]));
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -101,12 +104,8 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
               height: 200.0, // Optional height
               autoPlay: true, // Optional autoplay behavior
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
+            children,
+            AppFooter()
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselButton.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
@@ -96,59 +97,58 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
       'Comparta sus experiencias positivas sobre prácticas sostenibles en La Palma con otros viajeros, fomentando así un turismo responsable en la región.'
     ];
     final children = [
-      Text(
-        'SOSTENIBILIDAD EN LA PALMA',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
+      CarouselComponent(
+        items: carouselItems, // Pass the dynamic content
+        height: 200.0, // Optional height
+        autoPlay: true, // Optional autoplay behavior
       ),
-      Text(
-        'Recomendaciones para el Turista',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        description1,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      ...getRecomendacionesCards(recomendaciones),
-      Text(
-        'Avanzando hacia la Sostenibilidad',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      buildCustomCards(posts)
+      Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(children: [
+            Text(
+              'SOSTENIBILIDAD EN LA PALMA',
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color: AppColors.celeste, // Use text color from the property
+              ),
+            ),
+            Text(
+              'Recomendaciones para el Turista',
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color:
+                    AppColors.primaryColor, // Use text color from the property
+              ),
+            ),
+            Text(
+              description1,
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(
+              height: 16.0,
+            ),
+            ...getRecomendacionesCards(recomendaciones),
+            Text(
+              'Avanzando hacia la Sostenibilidad',
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color:
+                    AppColors.primaryColor, // Use text color from the property
+              ),
+            ),
+            buildCustomCards(posts)
+          ]))
     ];
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [
-            CarouselComponent(
-              items: carouselItems, // Pass the dynamic content
-              height: 200.0, // Optional height
-              autoPlay: true, // Optional autoplay behavior
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
-          ],
+          children: [...children, AppFooter()],
         ),
       ),
     );

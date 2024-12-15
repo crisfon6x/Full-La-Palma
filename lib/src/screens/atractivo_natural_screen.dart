@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:palma_municipio/src/app.dart/constants.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/atractivoNatural.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/widgets/carousel_component.dart';
@@ -17,79 +18,78 @@ class AtractivoNaturalScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final children = [
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        atractivonatural.title,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        atractivonatural.text!,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      (atractivonatural.videoUrl != null)
-          ? VideoWidget(
-              assetPath: atractivonatural.videoUrl!,
-              autoPlay: true,
-              looping: true)
-          : const SizedBox(
-              height: 0.0,
+    final children = Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(children: [
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            atractivonatural.title,
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
             ),
-      ...atractivonatural.btns,
-      const SizedBox(
-        height: 16,
-      ),
-      (atractivonatural.galery2 != null)
-          ? getCarousel(atractivonatural.galery2!, 12)
-          : const SizedBox(
-              height: 0.0,
+          ),
+          Text(
+            atractivonatural.text!,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          (atractivonatural.videoUrl != null)
+              ? VideoWidget(
+                  assetPath: atractivonatural.videoUrl!,
+                  autoPlay: true,
+                  looping: true)
+              : const SizedBox(
+                  height: 0.0,
+                ),
+          ...atractivonatural.btns,
+          const SizedBox(
+            height: 16,
+          ),
+          (atractivonatural.galery2 != null)
+              ? getCarousel(atractivonatural.galery2!, 12)
+              : const SizedBox(
+                  height: 0.0,
+                ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          if (atractivonatural.title == 'Capilla de Santa Bárbara')
+            drawEstatua(),
+          if (atractivonatural.mapUrl != '')
+            MapImageWithButton(
+                imageUrl: 'assets/images/gmapsLaPalma.png',
+                mapUrl: atractivonatural.mapUrl),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            atractivonatural.titleRecomendaciones!,
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
             ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      if (atractivonatural.title == 'Capilla de Santa Bárbara') drawEstatua(),
-      if (atractivonatural.mapUrl != '')
-        MapImageWithButton(
-            imageUrl: 'assets/images/gmapsLaPalma.png',
-            mapUrl: atractivonatural.mapUrl),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        atractivonatural.titleRecomendaciones!,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      (atractivonatural.recomendaciones != null)
-          ? Recomendaciones(items: atractivonatural.recomendaciones)
-          : const SizedBox(
-              height: 16.0,
-            )
-    ];
+          ),
+          (atractivonatural.recomendaciones != null)
+              ? Recomendaciones(items: atractivonatural.recomendaciones)
+              : const SizedBox(
+                  height: 16.0,
+                )
+        ]));
     return Scaffold(
         body: SingleChildScrollView(
             child: Column(children: [
       getCarousel(atractivonatural.galery1, 0),
-      Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: children,
-        ),
-      ),
+      children,
+      AppFooter()
     ])));
   }
 

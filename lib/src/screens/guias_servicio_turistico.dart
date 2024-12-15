@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
 import 'package:palma_municipio/src/models/servicioTuristico.dart';
@@ -894,82 +895,84 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
             ),
           ]),
     ];
-    final children = [
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        'Guía de servicios Turístico',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        description1,
-        style: const TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const TitleDivider(
-        text: 'Guía de Restaurantes',
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        'Restaurantes Urbanos',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      ...getServiciosList(restUrbanos),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        'Restaurantes Rurales',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      ...getServiciosList(restRurales),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        'Alojamiento',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      ...getServiciosList(alojamiento),
-      const SizedBox(
-        height: 16.0,
-      ),
-      Text(
-        'Balnearios',
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      ...getServiciosList(balnearios),
-    ];
+    final children = Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(children: [
+          const TitleDivider(
+            text: AppTexts.laPalma,
+          ),
+          Text(
+            'Guía de servicios Turístico',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            description1,
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          const TitleDivider(
+            text: 'Guía de Restaurantes',
+          ),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            'Restaurantes Urbanos',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          ...getServiciosList(restUrbanos),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            'Restaurantes Rurales',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          ...getServiciosList(restRurales),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            'Alojamiento',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          ...getServiciosList(alojamiento),
+          const SizedBox(
+            height: 16.0,
+          ),
+          Text(
+            'Balnearios',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          ...getServiciosList(balnearios),
+        ]));
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -980,12 +983,8 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
                 height: 200.0, // Optional height
                 autoPlay: true, // Optional autoplay behavior
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  children: children,
-                ),
-              ),
+              children,
+              const AppFooter()
             ],
           ),
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:palma_municipio/src/app.dart/constants.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
 import 'package:palma_municipio/src/models/image_card.dart';
 import 'package:palma_municipio/src/models/post.dart';
@@ -22,64 +23,59 @@ En Villa Paraíso buscan cerrar el ciclo de los desechos orgánicos, mediante la
     const description2 =
         '''Fanny Triana Mahecha, Yolima Rojas Wilches y Jose Lemos Angulo
 En los predios de Café Colimas se transforman los desechos del proceso del café en valioso abono orgánico. Utilizando el mucílago del café, se crea una mezcla rica en nutrientes que se somete a un proceso de compostaje controlado. Durante varias semanas, esta mezcla se airea y monitorea, permitiendo que los microorganismos descompongan la materia orgánica. El resultado es un abono rico en nitrógeno, fósforo y potasio, ideal para aplicar en los cafetales. Esta práctica mejora la estructura del suelo, aumenta su capacidad de retención de agua y proporciona nutrientes esenciales para las plantas. Además de reducir costos de fertilización, este método cierra el ciclo de nutrientes, minimizando el impacto ambiental y promoviendo una agricultura más sostenible. ''';
-    var children = [
-      const SizedBox(
-        height: 20,
-      ),
-      Text(
-        post.title,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      Text(
-        post.subtitle,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 12,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.celeste, // Use text color from the property
-        ),
-      ),
-      const SizedBox(
-        height: 8,
-      ),
-      StyledImage(
-        imageUrl: post.image, // Replace with your image path
-        borderRadius: 16.0,
-      ),
-      const SizedBox(
-        height: 16,
-      ),
-      Text(
-        post.titleText,
-        style: const TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-      const SizedBox(height: 16.0),
-      Text(
-        post.text,
-        style: const TextStyle(fontSize: 16),
-      ),
-      if (post.title == 'Manejo de residuos')
-        manejoResiduos(description1, description2)
-    ];
+    var children = Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(children: [
+          const SizedBox(
+            height: 20,
+          ),
+          Text(
+            post.title,
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
+          Text(
+            post.subtitle,
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 12,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
+            ),
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          StyledImage(
+            imageUrl: post.image, // Replace with your image path
+            borderRadius: 16.0,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          Text(
+            post.titleText,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 16.0),
+          Text(
+            post.text,
+            style: const TextStyle(fontSize: 16),
+          ),
+          if (post.title == 'Manejo de residuos')
+            manejoResiduos(description1, description2)
+        ]));
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
-          ],
+          children: [children, AppFooter()],
         ),
       ),
     );

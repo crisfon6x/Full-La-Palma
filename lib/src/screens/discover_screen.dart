@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:palma_municipio/src/app.dart/constants.dart';
+import 'package:palma_municipio/src/components/foooter_component.dart';
 import 'package:palma_municipio/src/models/atractivoNatural.dart';
 import 'package:palma_municipio/src/models/carouselButton.dart';
 import 'package:palma_municipio/src/models/carouselItem.dart';
@@ -110,83 +111,98 @@ Ubicado a solo 150 kilómetros al noroeste de Bogotá, este encantador municipio
 La Palma no sólo cautiva por sus paisajes, sino también por su comunidad y su historia. Aquí, el entorno natural no sólo embellece, sino que también impulsa la vida económica y cultural de sus pobladores, que viven en armonía con la tierra y sus riquezas.''';
 
     var children = [
-      Text(
-        title,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
+      Padding(
+        padding: EdgeInsets.only(
+          left: 16,
+          right: 16,
         ),
-      ),
-      const Text(
-        description1,
-        style: TextStyle(fontSize: 16),
-      ),
-      const VideoWidget(
-        assetPath: 'assets/videos/Video-No.-1-La-Palma.mp4',
-        autoPlay: true,
-        looping: true,
-      ),
-      const Text(
-        description2,
-        style: TextStyle(fontSize: 16),
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      const MapImageWithButton(
-        imageUrl: 'assets/images/gmapsLaPalma.png',
-        mapUrl:
-            'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
-      ),
-      const SizedBox(
-        height: 16.0,
-      ),
-      getCategories(context),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        AppTexts.enRealidadAumentada,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
+        child: Column(
+          children: [
+            Text(
+              title,
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color:
+                    AppColors.primaryColor, // Use text color from the property
+              ),
+            ),
+            const Text(
+              description1,
+              style: TextStyle(fontSize: 16),
+            ),
+            const VideoWidget(
+              assetPath: 'assets/videos/Video-No.-1-La-Palma.mp4',
+              autoPlay: true,
+              looping: true,
+            ),
+            const Text(
+              description2,
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(
+              height: 16.0,
+            ),
+            const MapImageWithButton(
+              imageUrl: 'assets/images/gmapsLaPalma.png',
+              mapUrl:
+                  'https://www.google.com/maps?ll=5.358432,-74.390683&z=15&t=h&hl=es&gl=CO&mapclient=embed&q=La+Palma+Cundinamarca',
+            ),
+            const SizedBox(
+              height: 16.0,
+            ),
+            getCategories(context),
+            const TitleDivider(
+              text: AppTexts.laPalma,
+            ),
+            Text(
+              AppTexts.enRealidadAumentada,
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color:
+                    AppColors.primaryColor, // Use text color from the property
+              ),
+            ),
+            ...getImageCards(),
+            const TitleDivider(
+              text: AppTexts.laPalma,
+            ),
+            Text(
+              AppTexts.aliados,
+              style: GoogleFonts.leagueSpartan(
+                fontSize: 25,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.normal,
+                color:
+                    AppColors.primaryColor, // Use text color from the property
+              ),
+            ),
+            const CardContact(
+              title: "Gobernación de Cundinamarca",
+              image: 'assets/images/Gobernacion-Cundinamarca-3.jpg',
+              coordinates: "4°38'28.25\"N 74°5'40.09\"W",
+              address: "Calle 26 No. 51 – 53, Bogotá DC",
+              hours: "Lunes a viernes de 8:30 a.m a 16:30 p.m",
+              email: "Correo institucional: contactenos@cundinamarca.gov.co",
+              phone: "+57 (601) 7490000",
+            ),
+            const CardContact(
+              title: "Alcaldía Municipal de La Palma",
+              image: 'assets/images/Alcaldia-de-La-Palma-Cundinamarca-3.jpg',
+              coordinates: "5°21'37\"N 74°23'24\"W",
+              address:
+                  "Edificio Municipal Carrera 4 A No. 4 - 45 Parque Diana Turbay",
+              hours:
+                  "Lunes a viernes de 7:30 a.m a 12:30 p.m y de 14:00 a 17:00",
+              email:
+                  "Correo institucional: alcaldia@lapalma-cundinamarca.gov.co",
+              phone: "+57 321 941 2307",
+            ),
+          ],
         ),
-      ),
-      ...getImageCards(),
-      const TitleDivider(
-        text: AppTexts.laPalma,
-      ),
-      Text(
-        AppTexts.aliados,
-        style: GoogleFonts.leagueSpartan(
-          fontSize: 25,
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.normal,
-          color: AppColors.primaryColor, // Use text color from the property
-        ),
-      ),
-      const CardContact(
-        title: "Gobernación de Cundinamarca",
-        image: 'assets/images/Gobernacion-Cundinamarca-3.jpg',
-        coordinates: "4°38'28.25\"N 74°5'40.09\"W",
-        address: "Calle 26 No. 51 – 53, Bogotá DC",
-        hours: "Lunes a viernes de 8:30 a.m a 16:30 p.m",
-        email: "Correo institucional: contactenos@cundinamarca.gov.co",
-        phone: "+57 (601) 7490000",
-      ),
-      const CardContact(
-        title: "Alcaldía Municipal de La Palma",
-        image: 'assets/images/Alcaldia-de-La-Palma-Cundinamarca-3.jpg',
-        coordinates: "5°21'37\"N 74°23'24\"W",
-        address:
-            "Edificio Municipal Carrera 4 A No. 4 - 45 Parque Diana Turbay",
-        hours: "Lunes a viernes de 7:30 a.m a 12:30 p.m y de 14:00 a 17:00",
-        email: "Correo institucional: alcaldia@lapalma-cundinamarca.gov.co",
-        phone: "+57 321 941 2307",
       )
     ];
     return Scaffold(
@@ -198,12 +214,8 @@ La Palma no sólo cautiva por sus paisajes, sino también por su comunidad y su 
               height: 200.0, // Optional height
               autoPlay: true, // Optional autoplay behavior
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: children,
-              ),
-            ),
+            ...children,
+            AppFooter()
           ],
         ),
       ),

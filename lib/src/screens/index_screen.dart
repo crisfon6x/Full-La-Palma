@@ -151,7 +151,7 @@ class IndexScreen extends StatelessWidget {
               ],
             ),
           ),
-          AppFooter(),
+          const AppFooter(),
           // Contenido sin padding
         ],
       ),

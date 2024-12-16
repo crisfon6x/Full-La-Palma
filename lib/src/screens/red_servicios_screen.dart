@@ -585,7 +585,7 @@ class RedServiciosScreen extends StatelessWidget {
         height: 16,
       ),
       const TitleDivider(
-        text: 'Transporte',
+        text: 'Organismos de Socorro',
       ),
       Container(
         padding: const EdgeInsets.all(16.0),

@@ -73,9 +73,9 @@ class SostenibilidadScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''La Palma, es un tesoro escondido en el corazón de Cundinamarca, el cual ofrece una experiencia única que combina la riqueza de su patrimonio religioso, la exquisitez de su gastronomía local y la belleza incomparable de su entorno natural. Como visitante, tiene la oportunidad de sumergirse en la cultura vibrante de La Palma y, al mismo tiempo, contribuir a la preservación de sus tradiciones y ecosistemas.
+        '''La Palma es un tesoro escondido en el corazón de Cundinamarca con características que combinan la riqueza de su patrimonio religioso, la exquisitez de su gastronomía local y la belleza incomparable de su entorno natural. Sus visitantes tienen la oportunidad de sumergirse en una cultura vibrante y, al mismo tiempo, contribuir a la preservación de sus tradiciones y ecosistemas.  
 
-Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos preparado las siguientes recomendaciones que le guiarán en su viaje por este maravilloso destino:''';
+Para ayudarles a disfrutar de una estancia responsable y enriquecedora, hemos preparado las siguientes recomendaciones que les guiarán en su viaje por este maravilloso destino: ''';
     final List<String> recomendaciones = [
       'Elija proveedores locales que ofrezcan experiencias auténticas y sostenibles, especialmente para actividades religiosas, gastronómicas y de naturaleza. Esto ayuda a la economía local y garantiza un turismo responsable.',
       'Respete los lugares sagrados y las tradiciones religiosas locales. Vista apropiadamente en el santuario, y mantenga un comportamiento respetuoso durante ceremonias y eventos religiosos.',
@@ -124,17 +124,7 @@ Para ayudarle a disfrutar de una estancia responsable y enriquecedora, hemos pre
               height: 16.0,
             ),
             ...getRecomendacionesCards(recomendaciones),
-            Text(
-              'Avanzando hacia la Sostenibilidad',
-              style: GoogleFonts.leagueSpartan(
-                fontSize: 25,
-                fontWeight: FontWeight.w700,
-                fontStyle: FontStyle.normal,
-                color:
-                    AppColors.primaryColor, // Use text color from the property
-              ),
-            ),
-            buildCustomCards(posts)
+            
           ]))
     ];
     return Scaffold(

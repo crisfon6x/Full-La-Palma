@@ -34,10 +34,8 @@ class TurismoReligiosoScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''La Palma se destaca como un destino único para el turismo religioso, donde la devoción y la belleza se entrelazan en cada rincón. Este pintoresco pueblo, con una profunda tradición católica y una rica historia, atrae a quienes buscan una experiencia espiritual auténtica. La imponente Iglesia de Nuestra Señora de la Asunción, con su arquitectura colonial, es el corazón de la fe local y un importante centro de peregrinación.''';
-    const description2 = '''
-Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la Semana Santa, una de las celebraciones más trascendentales del municipio, donde la espiritualidad se fusiona con las tradiciones que han marcado generaciones. ¡No te lo puedes perder!
-      ''';
+        '''La Palma se destaca como un destino imperdible para quienes buscan una experiencia espiritual profunda. Este pintoresco pueblo, con una rica tradición católica arraigada, atrae a visitantes de todo el país deseosos de conectar con su fe. La Iglesia de Nuestra Señora de la Asunción, un majestuoso templo que es el corazón espiritual de la comunidad, invita a la reflexión y la oración. Además, el encanto de sus calles empedradas, sus balcones adornados con flores y su ambiente sereno crean el escenario perfecto para una peregrinación inolvidable.''';
+    const description2 = '''''';
     final children = Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(children: [
@@ -124,16 +122,7 @@ Ven y descubre el alma religiosa de La Palma. Te invitamos a vivir de cerca la S
                   builder: (context) => AtractivoNaturalScreen(
                       atractivonatural:
                           getDataAtractivoNatural("capilla-santa-barbara"))))),
-      ImageCardModel(
-          title: "ALTO DE LA CRUZ",
-          subtitle: "",
-          image: "assets/images/Ruta-Alto-de-la-Cruz-La-Palma-7.jpg",
-          method: (context) => Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => AtractivoNaturalScreen(
-                      atractivonatural:
-                          getDataAtractivoNatural("alto-cruz"))))),
+  
       ImageCardModel(
           title: "SEMANA SANTA",
           subtitle: "",

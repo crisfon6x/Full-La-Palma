@@ -106,10 +106,9 @@ class AtractivoNaturalScreen extends StatelessWidget {
   }
 
   final description1 =
-      '''A un costado de la Capilla Santa Bárbara, los visitantes encontrarán a San Martín, fray nacido en La Palma Cundinamarca (1604 – 1661). Según el relato del historiador, Eduardo Anzola, “San Martin es reconocido como el hijo más ilustre de esta población y considerado como un religioso milagroso, tanto en vida como en muerte.
+      '''A un costado de la Capilla Santa Bárbara, los visitantes encontrarán a San Martín, fray nacido en La Palma Cundinamarca (1604 – 1661).   
 
-Su vida y su muerte estuvieron llenos de asombrosos milagros y profecías. Es una de las almas en santidad más grande del continente.
-
+Según el relato del historiador, Eduardo Anzola, “San Martín es reconocido como el hijo más ilustre de esta población y considerado como un religioso milagroso y su vida está llena de asombrosos milagros y profecías”
 ''';
   Widget drawEstatua() {
     return Column(

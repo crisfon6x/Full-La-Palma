@@ -29,6 +29,14 @@ class EspaciosInteresScreen extends StatelessWidget {
         subtitle: "La Palma",
       ),
     ];
+
+final List<CarouselItem> carouselParqueDianaTurbay = [
+      CarouselItem(
+        image: "assets/images/Parque-Principal-Diana-Turbay-1-768x576.jpg",
+        title: "",
+        subtitle: "",
+      ),
+    ];
     final List<CarouselItem> carouselParques = [
       CarouselItem(
         image: "assets/images/Parque-Biosaluidable-la-Palma-1-768x512.jpg",
@@ -241,26 +249,29 @@ class EspaciosInteresScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''La Palma se llena de color y vida a lo largo del año con sus diversas ferias y festividades, que son un verdadero homenaje a la cultura, las tradiciones y la alegría de su gente. Entre ellas se destacan los eventos religiosos en honor a la Virgen de la Asunción, además de las tradicionales ferias agropecuarias y comerciales que dinamizan la economía local. ''';
-    const description2 = '''
-Durante estos días, la comunidad y los visitantes disfrutan de una amplia oferta cultural, artística y deportiva, con música, danza, gastronomía local y exhibiciones artesanales que celebran la identidad de La Palma. Las ferias y fiestas son el momento perfecto para disfrutar, compartir y fortalecer el sentido de pertenencia en este encantador municipio. ¡Únete a nosotros y vive la magia de La Palma!
-      ''';
+        '''A lo largo del año, La Palma celebra diversas ferias y fiestas que reflejan su rica cultura, las tradiciones y el espíritu de su gente. Estas festividades incluyen eventos religiosos, como las celebraciones en honor a la Virgen de la Asunción, así como las tradicionales ferias agropecuarias y comerciales que impulsan la economía local. También se llevan a cabo actividades culturales, artísticas y deportivas que congregan a la comunidad y visitantes, ofreciendo música, danza, muestras gastronómicas y exhibiciones artesanales. Las ferias y fiestas de La Palma propician el encuentro, la diversión y el fortalecimiento del sentido de pertenencia. ''';
+    const description2 = '''''';
     const description3 =
-        '''Inaugurado en 1993 en honor a la periodista Diana Turbay, el Parque Diana Turbay se encuentra en el corazón de La Palma, siendo un lugar emblemático que combina tranquilidad y un fuerte sentido de comunidad. Este parque, rodeado de naturaleza y amplias áreas verdes, es el sitio ideal para el esparcimiento y la recreación, tanto para los habitantes como para los visitantes. Actualmente, se encuentra en proceso de transformación para ofrecer un acceso aún más cómodo y atractivo a la comunidad, reafirmando su papel como un espacio de encuentro y disfrute para todos.''';
+        '''En 1993 fue inaugurado como un homenaje a la periodista Diana Turbay, de quien recibe su nombre. El parque, ubicado en el corazón de La Palma, es un espacio emblemático donde se conjugan la tranquilidad y el sentido de comunidad. Rodeado de naturaleza y áreas verdes, es un lugar de encuentro para los habitantes y visitantes, que ofrece un ambiente ideal para el esparcimiento y la recreación. Actualmente se encuentra en proceso de transformación para hacerlo más asequible a la comunidad. ''';
     const description4 =
-        '''Los parques deportivos de La Palma son espacios ideales para fomentar la práctica del deporte y la recreación en la comunidad. Equipados con modernos parques biosaludables y una villa olímpica, estos lugares ofrecen la oportunidad de disfrutar de actividades al aire libre, promoviendo un estilo de vida saludable y fortaleciendo los lazos sociales. Además de ser puntos de esparcimiento, se convierten en escenarios de torneos locales y eventos deportivos, consolidándose como centros clave para el bienestar físico y el desarrollo integral de los habitantes del municipio.''';
+        '''Son dos escenarios diseñados para fomentar la práctica del deporte y la recreación entre los habitantes: el parque biosaludable y la villa olímpica, que ofrecen a la comunidad la oportunidad de disfrutar de actividades al aire libre, promover un estilo de vida saludable y fortalecer los lazos sociales. Además de ser lugares de esparcimiento, en estos escenarios se realizan torneos locales y eventos deportivos, consolidándose como puntos importantes para el bienestar y el desarrollo físico en el municipio.''';
     const description5 =
-        '''Es un parque, ubicado en el barrio Kennedy; equipado con máquinas diseñadas para realizar actividades físicas y generar bienestar de los habitantes. Pensados para todas las edades, ofrecen una alternativa accesible y gratuita para ejercitarse en un entorno natural y relajante, fomentando un estilo de vida saludable y la conexión con la naturaleza.''';
+        '''Este espacio está equipado con máquinas de ejercicio para promover la actividad física y el bienestar de sus habitantes. Estos parques, diseñados para todas las edades, ofrecen una alternativa para realizar ejercicio en un entorno natural y relajante.''';
     const description6 =
-        '''Es un complejo multifuncional, con instalaciones de calidad para la práctica de fútbol, baloncesto y otras disciplinas. Este espacio promueve el deporte y el desarrollo físico, ofreciendo a la comunidad un lugar ideal para mantener un estilo de vida activo y saludable.''';
+        '''Es un complejo con instalaciones adecuadas para llevar a cabo diversas actividades deportivas como el fútbol, el baloncesto, y otras disciplinas, fomentando el deporte y el desarrollo físico en la comunidad.''';
     const description7 =
-        '''Es el corazón comercial del municipio, donde se mezclan tradición y frescura en un vibrante espacio lleno de vida. Aquí, agricultores y emprendedores locales ofrecen una gran variedad de productos frescos, desde frutas y verduras cultivadas en la región hasta productos artesanales y gastronómicos típicos de la zona. Además de ser un punto clave para el abastecimiento de la comunidad, la plaza es un lugar de encuentro donde los visitantes pueden sumergirse en la cultura local, descubrir sabores auténticos y apreciar la hospitalidad de los palmeños.''';
+        '''Esta plaza es considerada el corazón comercial del municipio, donde se mezclan tradición y frescura en un vibrante espacio lleno de vida. Aquí, agricultores y productores locales ofrecen una gran variedad de productos frescos, desde frutas y verduras cultivadas en la región hasta productos artesanales y gastronómicos típicos de la zona. Además de ser un punto clave para el abastecimiento de la comunidad. Es un lugar de encuentro donde los visitantes pueden sumergirse en la cultura local, descubrir sabores auténticos y apreciar la hospitalidad de los palmeros. ''';
+    const description7_ = '''
+Está ubicado dentro del Santuario de la Virgen de la Asunción, es un espacio dedicado a preservar y celebrar la rica tradición religiosa del municipio. En su sala se exponen no solo los trajes y vestuarios de la imagen de la Virgen, confeccionados con esmero por damas palmeras y ofrecidos durante las fiestas anuales y la bajada del camarín cada siete años, sino también objetos litúrgicos, reliquias y piezas de arte sacro que datan de distintas épocas.  
+
+Este museo es fiel reflejo de la devoción de la comunidad hacia la Virgen de la Asunción, pero también es un lugar de encuentro en el que confluyen la fe, la historia y el arte religioso, siendo un importante referente cultural para los visitantes y los habitantes de La Palma. 
+''';	
     const description8 =
-        '''Las artesanías de La Palma son un fiel reflejo de la rica cultura y el talento de sus habitantes. Hechas principalmente con materiales naturales como el amero de la mazorca, estas obras destacan por su belleza y funcionalidad. Los artesanos locales producen una variada gama de productos, desde muñecas decorativas hasta artículos utilitarios, todos elaborados a mano con técnicas tradicionales que se han transmitido de generación en generación. Cada pieza no solo es una muestra de destreza, sino también un símbolo del profundo vínculo de la comunidad con su entorno natural y su legado cultural.''';
+        '''Las artesanías de La Palma reflejan la riqueza cultural y el talento de sus habitantes. Elaboradas principalmente a partir de materiales naturales como el amero de la mazorca, estas creaciones destacan por su belleza y funcionalidad. Los artesanos locales producen una variedad de productos hechos a mano, con técnicas tradicionales transmitidas de generación en generación. Estas artesanías no sólo son una muestra de la destreza manual, sino también un símbolo del vínculo profundo que la comunidad tiene con su entorno natural y su herencia cultural. ''';
     const description9 =
-        '''En el establecimiento de la Sra . Yolanda, las artesanías elaboradas en amero reflejan la riqueza cultural y las habilidades manuales de La Palma. Entre los productos más destacados se encuentran figuras decorativas y flores artificiales, las cuales no solo resaltan por su estética natural y sostenible, sino que también preservan una tradición que fusiona la vida rural y la creatividad popular, haciendo de cada pieza un homenaje a la historia y el arte local.''';
+        '''Las artesanías que se ofrecen en el establecimiento de la señora Yolanda Bustos son elaboradas en amero, la cáscara o fibra externa del maíz, que se utiliza para crear piezas decorativas y utilitarias de gran belleza. Entre los productos más comunes se encuentran las flores artificiales, hechas a mano con minucioso detalle. El proceso de elaboración inicia con la recolección y preparación de la materia prima, que es tratada para suavizarla y hacerla manejable, permitiendo dar forma a sus creaciones. Estas artesanías destacan no sólo por su estética natural y sostenibilidad, sino también por preservar una tradición que combina elementos de la vida rural y la creatividad popular. ''';
     const description10 =
-        '''Es un pilar clave en el fomento de la lectura, el conocimiento y la cultura en la comunidad. Con una amplia colección de libros, que abarca desde literatura clásica hasta textos educativos, la biblioteca ofrece recursos accesibles para todas las edades. Además, organiza talleres, charlas y eventos culturales, promoviendo el aprendizaje continuo y el acceso a la información. Este espacio se ha convertido en un lugar de encuentro para estudiantes, investigadores y amantes de la lectura, desempeñando un papel fundamental en el desarrollo educativo y cultural del municipio.''';
+        '''Es un espacio dedicado al fomento de la lectura, el conocimiento y la cultura en la comunidad. Ofrece una variada colección de libros, desde literatura clásica hasta textos educativos, accesibles para todas las edades. Además, organiza actividades como talleres, charlas y eventos culturales para promover el aprendizaje continuo y el acceso a la información, lo que lo hace fundamental para el desarrollo educativo y cultural del municipio.  Por todo ello, es, por excelencia, un lugar de encuentro para estudiantes, investigadores y amantes de la lectura. ''';
     var list = Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(children: [
@@ -415,6 +426,12 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
             description4,
             style: const TextStyle(fontSize: 16),
           ),
+          CarouselComponent(
+            items: carouselParqueDianaTurbay, // Pass the dynamic content
+            height: 200.0, // Optional height
+            autoPlay: true, // Optional autoplay behavior
+            border_radius: 12,
+          ),
           const SizedBox(
             height: 8.0,
           ),
@@ -527,7 +544,7 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
             ),
           ),
           Text(
-            'Plaza de Mercado de La Palma: El Corazón Comercial y Cultural del Municipio',
+            'Espacio de encuentro comercial',
             style: GoogleFonts.leagueSpartan(
               fontSize: 20,
               fontWeight: FontWeight.w700,
@@ -600,6 +617,15 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
               color: AppColors.primaryColor, // Use text color from the property
             ),
           ),
+          Text(
+            'Arte y cultura religiosa',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.celeste, // Use text color from the property
+            ),
+          ),
           const Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -661,7 +687,7 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
             ],
           ),
           Text(
-            description7,
+            description7_,
             style: const TextStyle(fontSize: 16),
           ),
           CarouselComponent(
@@ -679,8 +705,17 @@ Durante estos días, la comunidad y los visitantes disfrutan de una amplia ofert
           const SizedBox(
             height: 16,
           ),
+          Text(
+            'Artesanos',
+            style: GoogleFonts.leagueSpartan(
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.normal,
+              color: AppColors.primaryColor, // Use text color from the property
+            ),
+          ),
           const Text(
-            'Artesanías de La Palma: Un Reflejo de Cultura y Creatividad Local',
+            'Reflejo de creatividad local ',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
           Text(

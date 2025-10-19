@@ -21,7 +21,7 @@ class GuiasServicioTuristicoScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''En La Palma podrás disfrutar de variedad gastronómica en restaurantes urbanos y rurales, y seleccionar alojamientos que van desde hoteles hasta hospedajes en entornos más tranquilos y servicio de camping. En los balnearios locales encontrarán recreación. Consulta esta amplia oferta turística del municipio y disfruta al máximo de lo que La Palma tiene para ofrecerte.''';
+        '''Esta guía de La Palma Cundinamarca ofrece información clave sobre las opciones de restaurantes urbanos y rurales; y hospedajes en hoteles hasta alojamientos rurales, para facilitar a los turistas encontrar el lugar que mejor se adapte a sus necesidades. Además, incluye una lista de balnearios para la recreación y el descanso, que enriquecen la oferta turística del municipio.''';
     final List<Servicioturistico> restUrbanos = [
       Servicioturistico(
           address:

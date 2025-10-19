@@ -23,7 +23,7 @@ class PrestadoresServiciosScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''ASOTURISPAL promueve el turismo sostenible en La Palma, Cundinamarca, mediante la búsqueda del desarrollo integral, la paz y la reconciliación, estacando la cultura local, la riqueza natural, religiosa y humana para beneficiar a toda la comunidad.''';
+        '''Esta organización fue creada el 2 abril de 2024, como resultado del Diplomado de Servicios Turísticos Sostenibles, desarrollado por profesores de la Fundación Universitaria Los Libertadores, que inspiro a un grupo de habitantes de La Palma, para asociarse con el fin de promover el turismo sostenible en el municipio de La Palma, en la búsqueda del desarrollo integral, la paz y la reconciliación, destacando la cultura local y la riqueza natural, religiosa y humana para beneficiar a toda la comunidad. En la actualidad está conformada por 50 miembros residentes de esta población. ''';
 
     List<Asociacion> asociaciones = [
       Asociacion(name: 'Yacopí de parque a parque con Caparrapí', pdf: ''),

@@ -34,13 +34,8 @@ class OfertaGastronomicaScreen extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''Brindando a locales y visitantes una variedad de platos tradicionales que capturan la esencia de la región. Entre las especialidades más destacadas se encuentran el sancocho de gallina, la sopa de balines, las arepas de cemento, platos elaborados a base de nacuma y el delicioso fiambre, todos elaborados con ingredientes frescos y locales que resaltan los sabores autóctonos de la zona.''';
-    const description2 = '''
-
-Además, durante los festivales gastronómicos que se celebran en el municipio, los asistentes tienen la oportunidad de saborear estos platillos tradicionales acompañados de productos frescos del campo, como frutas, verduras y carnes locales.
-
-La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sino que también invita a los visitantes a sumergirse en la calidez y hospitalidad de su gente, creando recuerdos imborrables que combinan tradición, sabor y cultura.
-      ''';
+        '''La oferta gastronómica de La Palma es un reflejo de la riqueza cultural y agrícola de la región, al ofrecer una variedad de platos tradicionales que encantan a locales y visitantes. Entre las especialidades más destacadas se encuentran el sancocho de gallina, la sopa de balines, las arepas de cemento y fiambre, todos preparados con ingredientes frescos y locales. Además, los festivales gastronómicos que se celebran en el municipio brindan la oportunidad de disfrutar de platos típicos acompañados por productos frescos del campo, como frutas, verduras, y carnes de la región. La gastronomía de La Palma es una experiencia auténtica que combina sabores tradicionales con la calidez de su gente. ''';
+    const description2 = '''''';
     final children = Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(children: [
@@ -51,15 +46,6 @@ La gastronomía de La Palma no solo ofrece una experiencia culinaria única, sin
               fontWeight: FontWeight.w700,
               fontStyle: FontStyle.normal,
               color: AppColors.celeste, // Use text color from the property
-            ),
-          ),
-          Text(
-            'es un reflejo vibrante de su rica cultura y diversidad agrícola',
-            style: GoogleFonts.leagueSpartan(
-              fontSize: 24,
-              fontWeight: FontWeight.w900,
-              fontStyle: FontStyle.normal,
-              color: AppColors.primaryColor, // Use text color from the property
             ),
           ),
           Text(

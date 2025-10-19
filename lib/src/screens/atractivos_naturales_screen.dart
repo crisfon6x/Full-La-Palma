@@ -99,16 +99,13 @@ class AtractivosNaturales extends StatelessWidget {
       ),
     ];
     const description1 =
-        '''La Palma es un verdadero refugio natural, con paisajes montañosos, que ofrecen el escenario perfecto tanto para la aventura como para el descanso. Entre sus atractivos se destacan miradores el Alto de la Cruz, La Cuchilla o la Torre, Alto de la Osa, la Cañada y Alto Grande, que regalan vistas espectaculares, majestuosas montañas como la India Dormida. El río Murca y quebradas de aguas cristalinas y refrescantes cascadas.''';
+        '''Los atractivos naturales de La Palma constituyen sus mayores tesoros, pues cuenta con paisajes montañosos y áreas muy verdes que invitan al descanso y la aventura. Entre ellos destacan miradores, montañas, cascadas, ríos y quebradas, espacios ideales para disfrutar de la naturaleza y refrescarse en aguas cristalinas. La riqueza natural del municipio también incluye sus exuberantes colinas y bosques, ideales para el ecoturismo y el contacto directo con la biodiversidad local. Estos atractivos convierten al municipio en un destino ideal para quienes buscan una experiencia auténtica y relajante en medio de la naturaleza. ''';
     const description2 =
-        ''' Los exuberantes bosques y colinas que rodean La Palma crean un entorno ideal para el ecoturismo, proporcionando oportunidades únicas para adentrarse en la biodiversidad local. Aquí, cada sendero y rincón natural se convierte en una experiencia auténtica, donde los visitantes pueden disfrutar de un escape revitalizante y lleno de tranquilidad en medio de una naturaleza sorprendente.
-
- ¡La Palma es el destino perfecto para quienes buscan aventura y serenidad en un solo lugar!''';
+        '''''';
     const faunaDescription =
-        '''La diversidad de la fauna en La Palma es un verdadero tesoro natural. Entre las aves se encuentra el pájaro moteado, que se destaca por sus llamativos colores, mientras que la boruga y el guache completan este fascinante mosaico de vida silvestre. También existen mamíferos, entre ellos: el armadillo de nueve bandas, el cuatí y el tejón o mapache, que habitan los bosques junto a la ardilla y el conejo. El caimán de aguja y varias especies de serpientes también forman parte de la fauna local, enriqueciendo la región. Además, animales como la comadreja, el cusumbo y la chuchita colicorta se ocultan entre la vegetación.''';
+        '''La diversidad de la fauna en La Palma es un verdadero tesoro natural. Entre los mamíferos más representativos encontramos al armadillo de nueve bandas, el cuatí y el tejón o mapache, que recorren los bosques junto a la ardilla y el conejo. El caimán de aguja y varias especies de serpientes también habitan en la región, aportando a su riqueza ecológica. Además, animales como la comadreja, el cusumbo y la chuchita colicorta se esconden entre la vegetación. En los cielos, el carpintero moteado destaca por sus llamativos colores, mientras que la boruga y el guache completan este fascinante mosaico de vida silvestre. ''';
     const floraDescription =
-        '''La riqueza natural de La Palma se refleja en su diversa flora, que va desde majestuosos árboles hasta plantas frutales y ornamentales. Entre las especies más destacadas se encuentran el roble, el cedro y el nogal, que imponen su presencia en los paisajes. Los guaduales, la palma de cera y la palma de iraca agregan un toque único y exótico. La región también es rica en frutos como el níspero, la naranja, el plátano, el aguacate y el cacao, mientras que plantas como el café, la tapura, la guatila y el palo amargo enriquecen su biodiversidad.
-''';
+        '''La diversidad de la fauna en La Palma es un verdadero tesoro natural. Entre los mamíferos más representativos encontramos al armadillo de nueve bandas, el cuatí y el tejón o mapache, que recorren los bosques junto a la ardilla y el conejo. El caimán de aguja y varias especies de serpientes también habitan en la región, aportando a su riqueza ecológica. Además, animales como la comadreja, el cusumbo y la chuchita colicorta se esconden entre la vegetación. En los cielos, el carpintero moteado destaca por sus llamativos colores, mientras que la boruga y el guache completan este fascinante mosaico de vida silvestre. La riqueza natural de La Palma se refleja en su variada flora, que incluye desde árboles majestuosos hasta plantas frutales y ornamentales. Entre las especies más destacadas se encuentran el roble, el cedro y el nogal, imponentes árboles que dan vida a sus paisajes. Los guaduales, la palma de cera y la palma de iraca añaden un toque exótico y único. Además, en la región se dan frutos como el níspero, la naranja, el plátano, el aguacate y el cacao, mientras que plantas como el café, la tapura, la guatila y el palo amargo también forman parte esencial de su biodiversidad. ''';
 
     var children = [
       Padding(
@@ -152,7 +149,7 @@ class AtractivosNaturales extends StatelessWidget {
               text: AppTexts.laPalma,
             ),
             Text(
-              AppTexts.enRealidadAumentada,
+              AppTexts.turismoNaturaleza,
               style: GoogleFonts.leagueSpartan(
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
@@ -180,6 +177,12 @@ class AtractivosNaturales extends StatelessWidget {
               label: "Realidad Aumentada Serpiente",
               link:
                   "https://www.lookiar.com/models/ddfe339aaf8b3a60ee85ea3e8c0a984c/view", // Replace with the actual link
+            ),
+            const LinkImageCard(
+              imageUrl: "assets/images/icons/Icono-Realidad-aumentada-1.jpg",
+              label: "Reconocimiento de imagen Araña Cazadora Acuática",
+              link:
+                  "https://www.lookiar.com/scene/6fb4d904ca765bf33408b86f89b2d916", // Replace with the actual link
             ),
             Text(
               faunaDescription,
@@ -250,7 +253,7 @@ class AtractivosNaturales extends StatelessWidget {
       ImageCardModel(
           title: "PUENTE DE ORO",
           subtitle: "",
-          image: "assets/images/Puente-de-oro-.jpg",
+          image: "assets/images/Puente-de-Oro-1.jpg",
           method: (context) => Navigator.push(
               context,
               MaterialPageRoute(
@@ -258,15 +261,15 @@ class AtractivosNaturales extends StatelessWidget {
                       atractivonatural:
                           getDataAtractivoNatural("puete-oro"))))),
       ImageCardModel(
-          title: "CASCADA CAIPAL",
+          title: "MIRADOR LA CAÑADA",
           subtitle: "",
-          image: "assets/images/Cascada-del-ensueno (1).jpg",
+          image: "assets/images/2.-La-canada-3-scaled.jpg",
           method: (context) => Navigator.push(
               context,
               MaterialPageRoute(
                   builder: (context) => AtractivoNaturalScreen(
                       atractivonatural:
-                          getDataAtractivoNatural("cascada-capital"))))),
+                          getDataAtractivoNatural("mirador-cunada"))))),      
       ImageCardModel(
           title: "RIO MURCA",
           subtitle: "",
@@ -298,7 +301,7 @@ class AtractivosNaturales extends StatelessWidget {
                       atractivonatural:
                           getDataAtractivoNatural("cierra-india"))))),
       ImageCardModel(
-          title: "RESERVA NATURAL ALTO DE LA ROSA",
+          title: "RESERVA NATURAL ALTO DE LA OSA",
           subtitle: "",
           image: "assets/images/Alto-de-la-Osa-1.jpeg",
           method: (context) => Navigator.push(

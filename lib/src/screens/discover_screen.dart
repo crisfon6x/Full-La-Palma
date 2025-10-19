@@ -97,15 +97,10 @@ class DiscoverScreen extends StatelessWidget {
 
     const title = "Descubre La Palma: Naturaleza, cultura y encanto.";
     const description1 =
-        '''¿Si buscas tranquilidad, paz y conexión con la naturaleza? ¡La Palma es tu destino ideal!
+        '''La Palma es un municipio del departamento de Cundinamarca, ubicado estratégicamente a 150 kilómetros al noroeste de Bogotá, a 1.462 metros sobre el nivel del mar. Sus paisajes y su clima templado lo convierten en un destino ideal para disfrutar de la naturaleza, en cualquier época del año; y del turismo religioso, para quienes buscan una experiencia espiritual, pues cuenta con el Santuario de Nuestra Señora de la Asunción, un majestuoso templo que invita a la reflexión y la oración.  
 
-Ubicado a solo 150 kilómetros al noroeste de Bogotá, este encantador municipio te invita a explorar sus paisajes montañosos, su rica cultura, exquisita gastronomía ancestral y cálida hospitalidad. También podrás visitar el Santuario de Nuestra Señora de La Asunción, disfrutar de caminatas ecológicas y ciclismo de montaña.''';
-
-    const description2 =
-        '''Este tesoro natural y cultural del departamento de Cundinamarca cuenta con un clima cálido y agradable de 21°C, que ofrece un entorno espectacular en las faldas de la majestuosa cordillera de la Osa. Desde sus miradores, el Alto de la Cruz y San Javier enmarcan una vista panorámica impresionante de verdes montañas y valles profundos.
-
-La Palma no sólo cautiva por sus paisajes, sino también por su comunidad y su historia. Aquí, el entorno natural no sólo embellece, sino que también impulsa la vida económica y cultural de sus pobladores, que viven en armonía con la tierra y sus riquezas.''';
-
+Dada su ubicación, sobre la cuenca del Río Negro, destaca su relieve montañoso y topografía quebrada.  Esta geografía única no sólo define el paisaje del municipio, sino que también influye en su rica biodiversidad y en las actividades económicas de sus habitantes. Es así como, sus visitantes podrán disfrutar de paisajes naturales, clima agradable, deliciosa gastronomía y riqueza en biodiversidad. ''';
+ const description2 = '''Esta población, situada en un extenso territorio que incluye a los municipios vecinos de La Peña, El Peñón, Topaipí, Yacopí y Caparrapí, cuenta con una extensión total de 191 kilómetros cuadrados dividida en 56 veredas y un casco urbano compuesto por 20 barrios, siendo mucho más amplia el área rural. ''';
     var children = [
       Padding(
         padding: EdgeInsets.only(
